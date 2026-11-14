@@ -83,6 +83,7 @@ def main():
     summary = pd.read_csv(DATA / "wyoming_capacity_generation_by_fuel_2025.csv")
     proposed = pd.read_csv(DATA / "wyoming_proposed_generators_2025.csv")
     retiring = pd.read_csv(DATA / "wyoming_planned_retirements_2025.csv")
+    balance = pd.read_csv(DATA / "wyoming_generation_and_sales.csv")
 
     # ---------- Home ----------
     home = f"""
@@ -131,6 +132,12 @@ Administration (EIA) releases. Corrections that belong upstream are reported to 
                         ("cs", "Share of capacity"), ("gen", "2025 net generation (TWh)"),
                         ("gs", "Share of generation")],
                     num={"generators", "cap", "cs", "gen", "gs"})
+    bal = balance[balance["year"].isin([2001, 2005, 2010, 2015, 2020, 2024, 2025])].copy()
+    bal["gen"] = (bal["net_generation_mwh"] / 1e6).map(lambda x: f"{x:.1f}")
+    bal["sales"] = (bal["retail_sales_mwh"] / 1e6).map(lambda x: f"{x:.1f}")
+    bal["share"] = bal["net_export_share_pct"].map(lambda x: f"{x:.0f}%")
+    bal_tab = table(bal, [("year", "Year"), ("gen", "Net generation (TWh)"), ("sales", "In-state retail sales (TWh)"),
+                          ("share", "Not sold in Wyoming")], num={"gen", "sales", "share"})
     data = f"""
 <h1>Wyoming electricity generation, 2025</h1>
 <p class="asof">Dataset as of {AS_OF}. Covers generators located in Wyoming as reported to EIA for 2025, the most
@@ -142,6 +149,16 @@ Wyoming's 2025 generation from {summary.loc[summary.fuel_type_code_pudl=='coal',
 of its capacity; wind provided about
 {summary.loc[summary.fuel_type_code_pudl=='wind','generation_share_pct'].iloc[0]:.0f}% from
 {summary.loc[summary.fuel_type_code_pudl=='wind','capacity_share_pct'].iloc[0]:.0f}%.</p>
+<h2>Where it goes: generation and in-state sales, 2001 to 2025</h2>
+<p>Comparing the electricity generated in Wyoming with the electricity sold to retail customers in Wyoming gives a
+rough measure of how much leaves the state. In 2025, {checks['net_export_share_pct']:.0f}% of Wyoming's net
+generation was not sold to Wyoming customers. The share has drifted down from about 71% in 2001, mainly because
+in-state sales grew while generation stayed roughly level.</p>
+{bal_tab}
+<p>This is a net, approximate figure. It does not account for transmission and distribution losses, for electricity
+imported into Wyoming, or for which plants serve which customers. Delivery-only sales are excluded, because
+the same energy also appears as an energy sale; in Wyoming all reported sales are bundled, so this makes no
+difference here.</p>
 <h2>Downloads</h2>
 <ul>
 <li><a href="data/wyoming_generators_2025.csv">wyoming_generators_2025.csv</a>: all {checks['existing_generators']}
@@ -149,6 +166,8 @@ existing generators, with plant, utility, county, coordinates, balancing authori
 capacity and dates.</li>
 <li><a href="data/wyoming_capacity_generation_by_fuel_2025.csv">wyoming_capacity_generation_by_fuel_2025.csv</a>:
 the summary above.</li>
+<li><a href="data/wyoming_generation_and_sales.csv">wyoming_generation_and_sales.csv</a>: net generation,
+in-state retail sales and the share not sold in Wyoming, for each year from 2001 to 2025.</li>
 <li><a href="data/wyoming_proposed_generators_2025.csv">wyoming_proposed_generators_2025.csv</a> and
 <a href="data/wyoming_planned_retirements_2025.csv">wyoming_planned_retirements_2025.csv</a>: the data behind the
 <a href="monitor.html">monitor</a>.</li>
@@ -159,6 +178,7 @@ the summary above.</li>
 <li>PUDL table <code>out_eia__yearly_generators</code> (EIA Forms 860 and 923): generators, capacity and status.</li>
 <li>PUDL table <code>out_eia923__yearly_generation_fuel_combined</code> (EIA Form 923): net generation by plant and
 fuel.</li>
+<li>PUDL table <code>core_eia861__yearly_sales</code> (EIA Form 861): retail sales by utility and state.</li>
 <li>EIA-860 2025 data release, file <code>3_1_Generator_Y2025.xlsx</code>, used to cross-check the PUDL figures.</li>
 </ul>
 <h2>Checks</h2>

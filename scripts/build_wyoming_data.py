@@ -21,7 +21,9 @@ PUDL = "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/{}.parquet"
 TABLES = [
     "out_eia__yearly_generators",
     "out_eia923__yearly_generation_fuel_combined",
+    "core_eia861__yearly_sales",
 ]
+FIRST_YEAR = 2001
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data"
 
@@ -108,6 +110,20 @@ def main():
          "fuel_type_code_pudl", "capacity_mw", "planned_generator_retirement_date"]]
     retiring.to_csv(OUT / "wyoming_planned_retirements_2025.csv", index=False, date_format="%Y-%m-%d")
 
+    # 4. Generation compared with in-state retail sales, by year. Delivery-only sales are excluded because
+    # the same energy also appears as an energy-only sale.
+    gen_by_year = (gf[gf["plant_id_eia"].isin(wy_ids)].groupby("year")["net_generation_mwh"].sum())
+    sales = pd.read_parquet(fetch(TABLES[2], cache),
+                            columns=["report_date", "state", "service_type", "sales_mwh", "data_maturity"])
+    sales["year"] = pd.to_datetime(sales["report_date"]).dt.year
+    wy_sales = sales[(sales["state"] == STATE) & sales["service_type"].isin(["bundled", "energy"])]
+    sales_by_year = wy_sales.groupby("year")["sales_mwh"].sum()
+    balance = pd.DataFrame({"net_generation_mwh": gen_by_year, "retail_sales_mwh": sales_by_year})
+    balance = balance.loc[FIRST_YEAR:YEAR].round(0)
+    balance["net_export_share_pct"] = (100 * (1 - balance["retail_sales_mwh"] / balance["net_generation_mwh"])).round(1)
+    balance.index.name = "year"
+    balance.to_csv(OUT / "wyoming_generation_and_sales.csv")
+
     checks = {
         "existing_generators": int(len(existing)),
         "existing_capacity_mw": round(float(existing["capacity_mw"].sum()), 1),
@@ -116,6 +132,9 @@ def main():
         "postponed_or_cancelled_generators": int((~proposed["active"]).sum()),
         "postponed_or_cancelled_capacity_mw": round(float(proposed.loc[~proposed["active"], "capacity_mw"].sum()), 1),
         "net_generation_twh": round(float(gen.sum()) / 1e6, 2),
+        "retail_sales_twh": round(float(balance.loc[YEAR, "retail_sales_mwh"]) / 1e6, 2),
+        "net_export_share_pct": float(balance.loc[YEAR, "net_export_share_pct"]),
+        "sales_data_maturity": sorted(wy_sales.loc[wy_sales["year"] == YEAR, "data_maturity"].dropna().unique().tolist()),
     }
 
     # Optional cross-check against the EIA-860 workbook
