@@ -1,0 +1,8 @@
+fuel_type_code_pudl,generators,capacity_mw,net_generation_mwh,capacity_share_pct,generation_share_pct
+coal,25,5530.2,26361018.0,43.4,57.8
+wind,33,4707.4,12725057.0,37.0,27.9
+gas,33,1933.5,5026830.0,15.2,11.0
+hydro,32,303.4,829623.0,2.4,1.8
+solar,2,242.0,495997.0,1.9,1.1
+other,3,13.3,85290.0,0.1,0.2
+oil,4,5.8,52702.0,0.0,0.1

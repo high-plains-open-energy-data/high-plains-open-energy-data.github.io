@@ -1,0 +1,13 @@
+{
+  "existing_generators": 132,
+  "existing_capacity_mw": 12735.6,
+  "active_proposed_generators": 17,
+  "active_proposed_capacity_mw": 7206.6,
+  "postponed_or_cancelled_generators": 5,
+  "postponed_or_cancelled_capacity_mw": 621.1,
+  "net_generation_twh": 45.58,
+  "eia860_operable_generators": 132,
+  "eia860_operable_capacity_mw": 12735.6,
+  "eia860_proposed_generators": 17,
+  "eia860_proposed_capacity_mw": 7206.6
+}

@@ -1,0 +1,9 @@
+Text, data and teaching material in this repository are licensed under the
+Creative Commons Attribution 4.0 International licence (CC-BY-4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+The data are derived from the Public Utility Data Liberation project (PUDL),
+Catalyst Cooperative, also licensed under CC-BY-4.0, which processes data
+reported to the U.S. Energy Information Administration.
+
+Code in the scripts/ folder is licensed under the MIT licence; see LICENSE-CODE.

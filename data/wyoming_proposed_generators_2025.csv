@@ -1,0 +1,23 @@
+plant_id_eia,plant_name_eia,generator_id,utility_name_eia,county,technology_description,fuel_type_code_pudl,capacity_mw,operational_status_code,current_planned_generator_operating_date,status_description,active
+69189,Cowboy Solar II,C2BS,"TGE Wyoming 225, LLC",Laramie,Batteries,other,200.0,P,2027-12-01,Planned; regulatory approvals not initiated,True
+69189,Cowboy Solar II,C2PV,"TGE Wyoming 225, LLC",Laramie,Solar Photovoltaic,solar,365.0,T,2027-12-01,Regulatory approvals received; not under construction,True
+68022,Cowboy Solar I,CLP20,Cowboy Solar I,Laramie,Solar Photovoltaic,solar,400.0,P,2028-03-01,Planned; regulatory approvals not initiated,True
+63972,Two Rivers Wind Facility,TR1,Two Rivers Wind LLC,Carbon,Onshore Wind Turbine,wind,6.1,L,2028-10-01,Regulatory approvals pending; not under construction,True
+57703,Cheyenne Prairie Generating Station,02B,Black Hills Service Company LLC,Laramie,Natural Gas Fired Combustion Turbine,gas,40.0,P,2028-12-01,Planned; regulatory approvals not initiated,True
+57703,Cheyenne Prairie Generating Station,03A,Black Hills Service Company LLC,Laramie,Natural Gas Fired Combustion Turbine,gas,40.0,P,2028-12-01,Planned; regulatory approvals not initiated,True
+57703,Cheyenne Prairie Generating Station,03B,Black Hills Service Company LLC,Laramie,Natural Gas Fired Combustion Turbine,gas,40.0,P,2028-12-01,Planned; regulatory approvals not initiated,True
+68022,Cowboy Solar I,CLPBS,Cowboy Solar I,Laramie,Batteries,other,400.0,P,2028-12-01,Planned; regulatory approvals not initiated,True
+68317,Dutchman Solar generation and BESS,DUTC1,"DUTC bn, LLC",Converse,Solar Photovoltaic,solar,499.0,L,2029-06-01,Regulatory approvals pending; not under construction,True
+68317,Dutchman Solar generation and BESS,DUTC2,"DUTC bn, LLC",Converse,Batteries,other,499.0,L,2029-06-01,Regulatory approvals pending; not under construction,True
+64847,Rail Tie Wind,CRTW1,Repsol Renewables NA,Albany,Onshore Wind Turbine,wind,504.0,L,2029-06-01,Regulatory approvals pending; not under construction,True
+67936,Goshen Solar,GS1,"Goshen Solar, LLC",Goshen,Solar Photovoltaic,solar,163.0,T,2030-12-01,Regulatory approvals received; not under construction,True
+68635,Kemmerer Unit 1,KU1,US SFR Owner LLC,Lincoln,Nuclear,nuclear,500.0,L,2030-12-01,Regulatory approvals pending; not under construction,True
+58987,Chokecherry and Sierra Madre Wind,I-A,Power Company of Wyoming LLC,Carbon,Onshore Wind Turbine,wind,844.2,U,2031-12-01,"Under construction, 50 percent complete or less",True
+58987,Chokecherry and Sierra Madre Wind,I-B,Power Company of Wyoming LLC,Carbon,Onshore Wind Turbine,wind,849.6,U,2031-12-01,"Under construction, 50 percent complete or less",True
+58987,Chokecherry and Sierra Madre Wind,II-A,Power Company of Wyoming LLC,Carbon,Onshore Wind Turbine,wind,1303.2,U,2032-12-01,"Under construction, 50 percent complete or less",True
+58987,Chokecherry and Sierra Madre Wind,II-B,Power Company of Wyoming LLC,Carbon,Onshore Wind Turbine,wind,553.5,U,2033-12-01,"Under construction, 50 percent complete or less",True
+58987,Chokecherry and Sierra Madre Wind,I-C,Power Company of Wyoming LLC,Carbon,Onshore Wind Turbine,wind,500.0,IP,,"Indefinitely postponed, or no longer in resource plan",False
+52127,Elk Basin Gasoline Plant,EMGEN,Contango Oil and Gas,Park,Natural Gas Internal Combustion Engine,gas,0.7,IP,,"Indefinitely postponed, or no longer in resource plan",False
+692,Medicine Bow,12,SRIV Partnership LLC,Carbon,Onshore Wind Turbine,wind,0.7,CN,,Cancelled,False
+692,Medicine Bow,13,SRIV Partnership LLC,Carbon,Onshore Wind Turbine,wind,0.7,CN,,Cancelled,False
+68005,Uinta Wind,WIND1,Invenergy Services LLC,Uinta,Onshore Wind Turbine,wind,119.0,IP,,"Indefinitely postponed, or no longer in resource plan",False

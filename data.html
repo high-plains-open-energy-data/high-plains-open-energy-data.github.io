@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data | High Plains Open Energy Data</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+<a class="name" href="index.html">High Plains Open Energy Data</a>
+<nav><a href="index.html">Home</a><a href="data.html" class="current">Data</a><a href="monitor.html">Monitor</a><a href="teaching.html">Teaching</a></nav>
+</header>
+<main>
+
+<h1>Wyoming electricity generation, 2025</h1>
+<p class="asof">Dataset as of 14 November 2026. Covers generators located in Wyoming as reported to EIA for 2025, the most
+recent year of final data.</p>
+<h2>Summary by fuel</h2>
+<div class="wrap"><table><thead><tr><th>Fuel</th><th class="num">Generators</th><th class="num">Capacity (MW)</th><th class="num">Share of capacity</th><th class="num">2025 net generation (TWh)</th><th class="num">Share of generation</th></tr></thead><tbody><tr><td>Coal</td><td class="num">25</td><td class="num">5,530.2</td><td class="num">43.4%</td><td class="num">26.36</td><td class="num">57.8%</td></tr><tr><td>Wind</td><td class="num">33</td><td class="num">4,707.4</td><td class="num">37.0%</td><td class="num">12.73</td><td class="num">27.9%</td></tr><tr><td>Natural gas</td><td class="num">33</td><td class="num">1,933.5</td><td class="num">15.2%</td><td class="num">5.03</td><td class="num">11.0%</td></tr><tr><td>Hydro</td><td class="num">32</td><td class="num">303.4</td><td class="num">2.4%</td><td class="num">0.83</td><td class="num">1.8%</td></tr><tr><td>Solar</td><td class="num">2</td><td class="num">242.0</td><td class="num">1.9%</td><td class="num">0.50</td><td class="num">1.1%</td></tr><tr><td>Other (incl. batteries)</td><td class="num">3</td><td class="num">13.3</td><td class="num">0.1%</td><td class="num">0.09</td><td class="num">0.2%</td></tr><tr><td>Oil</td><td class="num">4</td><td class="num">5.8</td><td class="num">0.0%</td><td class="num">0.05</td><td class="num">0.1%</td></tr><tr><td>Total</td><td class="num">132</td><td class="num">12,735.6</td><td class="num">100%</td><td class="num">45.58</td><td class="num">100%</td></tr></tbody></table></div>
+<p>Coal provided about 58% of
+Wyoming's 2025 generation from 43%
+of its capacity; wind provided about
+28% from
+37%.</p>
+<h2>Downloads</h2>
+<ul>
+<li><a href="data/wyoming_generators_2025.csv">wyoming_generators_2025.csv</a>: all 132
+existing generators, with plant, utility, county, coordinates, balancing authority, fuel, technology, status,
+capacity and dates.</li>
+<li><a href="data/wyoming_capacity_generation_by_fuel_2025.csv">wyoming_capacity_generation_by_fuel_2025.csv</a>:
+the summary above.</li>
+<li><a href="data/wyoming_proposed_generators_2025.csv">wyoming_proposed_generators_2025.csv</a> and
+<a href="data/wyoming_planned_retirements_2025.csv">wyoming_planned_retirements_2025.csv</a>: the data behind the
+<a href="monitor.html">monitor</a>.</li>
+<li><a href="data/checks.json">checks.json</a>: the totals and cross-checks recorded when the data was built.</li>
+</ul>
+<h2>Sources</h2>
+<ul>
+<li>PUDL table <code>out_eia__yearly_generators</code> (EIA Forms 860 and 923): generators, capacity and status.</li>
+<li>PUDL table <code>out_eia923__yearly_generation_fuel_combined</code> (EIA Form 923): net generation by plant and
+fuel.</li>
+<li>EIA-860 2025 data release, file <code>3_1_Generator_Y2025.xlsx</code>, used to cross-check the PUDL figures.</li>
+</ul>
+<h2>Checks</h2>
+<p>Every build compares the PUDL figures with the EIA-860 workbook itself. For 2025:</p>
+<ul>
+<li>Existing generators: 132 generators and 12,735.6 MW in
+PUDL, against 132 generators and
+12,735.6 MW on EIA-860's operable schedule. They match exactly.</li>
+<li>Active proposed generators: 17 generators and
+7,206.6 MW in PUDL, against 17
+generators and 7,206.6 MW on EIA-860's proposed schedule. They match
+exactly once indefinitely postponed and cancelled projects are excluded, as described on the
+<a href="monitor.html">monitor</a> page.</li>
+</ul>
+<h2>Notes and limitations</h2>
+<ul>
+<li>Capacity is nameplate capacity. Summer and winter capacities, which are usually lower, are included in the
+generator file.</li>
+<li>Generation by fuel comes from plant-level EIA-923 data. Each generator has one primary fuel code, so units that
+can burn more than one fuel, or that have been converted, are counted under their primary fuel.</li>
+<li>"Other" includes battery storage and small units reporting other fuels.</li>
+<li>Net generation is measured at the plant; it is not the same as electricity consumed in Wyoming.</li>
+</ul>
+<h2>Reproduce it</h2>
+<p>Run <code>python scripts/build_wyoming_data.py</code> from the <a href="https://github.com/high-plains-open-energy-data/high-plains-open-energy-data.github.io">repository</a>. Add
+<code>--eia860 path/to/3_1_Generator_Y2025.xlsx</code> to repeat the cross-check against EIA's release.</p>
+<h2>Licence and attribution</h2>
+<p>CC-BY-4.0. Please cite as: High Plains Open Energy Data (2026), <em>Wyoming electricity generation, 2025</em>,
+derived from the Public Utility Data Liberation project (Catalyst Cooperative) and U.S. EIA Form 860 and 923
+data.</p>
+
+</main>
+<footer>
+<p>High Plains Open Energy Data is an independent project. It is not affiliated with any utility, energy company
+or government agency, including any organisation with "High Plains" in its name.</p>
+<p>Data derived from the <a href="https://catalyst.coop/pudl/">Public Utility Data Liberation project (PUDL)</a>,
+Catalyst Cooperative, licensed under CC-BY-4.0, which processes data reported to the U.S. Energy Information
+Administration. Text and data on this site are licensed under
+<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>; code under the MIT licence.
+<a href="https://github.com/high-plains-open-energy-data/high-plains-open-energy-data.github.io">Source on GitHub</a>.</p>
+</footer>
+</body>
+</html>
