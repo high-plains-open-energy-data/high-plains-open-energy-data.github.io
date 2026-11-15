@@ -9,12 +9,12 @@
 <body>
 <header>
 <a class="name" href="index.html">High Plains Open Energy Data</a>
-<nav><a href="index.html">Home</a><a href="data.html">Data</a><a href="monitor.html" class="current">Monitor</a><a href="teaching.html">Teaching</a></nav>
+<nav><a href="index.html">Home</a><a href="data.html">Data</a><a href="monitor.html" class="current">Monitor</a><a href="transmission.html">Transmission</a><a href="teaching.html">Teaching</a></nav>
 </header>
 <main>
 
 <h1>Wyoming generation tracker</h1>
-<p class="asof">As of 14 November 2026. Statuses are as reported to EIA for 31 December 2025 in the EIA-860 2025 data
+<p class="asof">As of 15 November 2026. Statuses are as reported to EIA for 31 December 2025 in the EIA-860 2025 data
 release, the most recent final data. They will be updated when EIA publishes newer data.</p>
 <h2>Summary</h2>
 <p>For 2025, developers and utilities reported <strong>17 active proposed
@@ -28,10 +28,53 @@ report a planned retirement.</p>
 <div class="wrap"><table><thead><tr><th>Plant</th><th>Generator</th><th>Technology</th><th class="num">Capacity (MW)</th><th>County</th><th>Owner or operator</th><th>Status</th><th>Planned operation</th><th class="num">EIA plant ID</th></tr></thead><tbody><tr><td>Cowboy Solar II</td><td>C2BS</td><td>Batteries</td><td class="num">200.0</td><td>Laramie</td><td>TGE Wyoming 225, LLC</td><td>P</td><td>Dec 2027</td><td class="num">69189</td></tr><tr><td>Cowboy Solar II</td><td>C2PV</td><td>Solar Photovoltaic</td><td class="num">365.0</td><td>Laramie</td><td>TGE Wyoming 225, LLC</td><td>T</td><td>Dec 2027</td><td class="num">69189</td></tr><tr><td>Cowboy Solar I</td><td>CLP20</td><td>Solar Photovoltaic</td><td class="num">400.0</td><td>Laramie</td><td>Cowboy Solar I</td><td>P</td><td>Mar 2028</td><td class="num">68022</td></tr><tr><td>Two Rivers Wind Facility</td><td>TR1</td><td>Onshore Wind Turbine</td><td class="num">6.1</td><td>Carbon</td><td>Two Rivers Wind LLC</td><td>L</td><td>Oct 2028</td><td class="num">63972</td></tr><tr><td>Cheyenne Prairie Generating Station</td><td>02B</td><td>Natural Gas Fired Combustion Turbine</td><td class="num">40.0</td><td>Laramie</td><td>Black Hills Service Company LLC</td><td>P</td><td>Dec 2028</td><td class="num">57703</td></tr><tr><td>Cheyenne Prairie Generating Station</td><td>03A</td><td>Natural Gas Fired Combustion Turbine</td><td class="num">40.0</td><td>Laramie</td><td>Black Hills Service Company LLC</td><td>P</td><td>Dec 2028</td><td class="num">57703</td></tr><tr><td>Cheyenne Prairie Generating Station</td><td>03B</td><td>Natural Gas Fired Combustion Turbine</td><td class="num">40.0</td><td>Laramie</td><td>Black Hills Service Company LLC</td><td>P</td><td>Dec 2028</td><td class="num">57703</td></tr><tr><td>Cowboy Solar I</td><td>CLPBS</td><td>Batteries</td><td class="num">400.0</td><td>Laramie</td><td>Cowboy Solar I</td><td>P</td><td>Dec 2028</td><td class="num">68022</td></tr><tr><td>Dutchman Solar generation and BESS</td><td>DUTC1</td><td>Solar Photovoltaic</td><td class="num">499.0</td><td>Converse</td><td>DUTC bn, LLC</td><td>L</td><td>Jun 2029</td><td class="num">68317</td></tr><tr><td>Dutchman Solar generation and BESS</td><td>DUTC2</td><td>Batteries</td><td class="num">499.0</td><td>Converse</td><td>DUTC bn, LLC</td><td>L</td><td>Jun 2029</td><td class="num">68317</td></tr><tr><td>Rail Tie Wind</td><td>CRTW1</td><td>Onshore Wind Turbine</td><td class="num">504.0</td><td>Albany</td><td>Repsol Renewables NA</td><td>L</td><td>Jun 2029</td><td class="num">64847</td></tr><tr><td>Goshen Solar</td><td>GS1</td><td>Solar Photovoltaic</td><td class="num">163.0</td><td>Goshen</td><td>Goshen Solar, LLC</td><td>T</td><td>Dec 2030</td><td class="num">67936</td></tr><tr><td>Kemmerer Unit 1</td><td>KU1</td><td>Nuclear</td><td class="num">500.0</td><td>Lincoln</td><td>US SFR Owner LLC</td><td>L</td><td>Dec 2030</td><td class="num">68635</td></tr><tr><td>Chokecherry and Sierra Madre Wind</td><td>I-A</td><td>Onshore Wind Turbine</td><td class="num">844.2</td><td>Carbon</td><td>Power Company of Wyoming LLC</td><td>U</td><td>Dec 2031</td><td class="num">58987</td></tr><tr><td>Chokecherry and Sierra Madre Wind</td><td>I-B</td><td>Onshore Wind Turbine</td><td class="num">849.6</td><td>Carbon</td><td>Power Company of Wyoming LLC</td><td>U</td><td>Dec 2031</td><td class="num">58987</td></tr><tr><td>Chokecherry and Sierra Madre Wind</td><td>II-A</td><td>Onshore Wind Turbine</td><td class="num">1,303.2</td><td>Carbon</td><td>Power Company of Wyoming LLC</td><td>U</td><td>Dec 2032</td><td class="num">58987</td></tr><tr><td>Chokecherry and Sierra Madre Wind</td><td>II-B</td><td>Onshore Wind Turbine</td><td class="num">553.5</td><td>Carbon</td><td>Power Company of Wyoming LLC</td><td>U</td><td>Dec 2033</td><td class="num">58987</td></tr></tbody></table></div>
 <h2>Planned retirements</h2>
 <div class="wrap"><table><thead><tr><th>Plant</th><th>Generator</th><th>Technology</th><th class="num">Capacity (MW)</th><th>Operator</th><th>Planned retirement</th><th class="num">EIA plant ID</th></tr></thead><tbody><tr><td>Dave Johnston</td><td>3</td><td>Conventional Steam Coal</td><td class="num">229.5</td><td>PacifiCorp</td><td>Dec 2027</td><td class="num">4158</td></tr><tr><td>Elk Basin Gasoline Plant</td><td>GEN1</td><td>Other Gases</td><td class="num">1.0</td><td>Contango Oil and Gas</td><td>Jan 2026</td><td class="num">52127</td></tr></tbody></table></div>
+<h2>How planned coal retirement dates have changed</h2>
+<p>EIA-860 records, each year, the retirement date that a plant's owner plans for each generator. Comparing the
+annual editions shows how those plans have moved. Between the 2023 and 2024 editions, 10 Wyoming coal
+units totalling 3,656.1 MW stopped reporting a planned retirement date: Dave Johnston 1, 2 and 4, Jim Bridger
+1 to 4, Naughton 1 and 2, and Wyodak. Only Dave Johnston 3 kept its date, December 2027. Two of the units, Jim Bridger 1 and 2, had been converted to burn natural
+gas by the 2024 edition.</p>
+<div class="wrap"><table><thead><tr><th>Unit</th><th>2019</th><th>2020</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td>Dave Johnston 1</td><td>none</td><td>none</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>none</td><td>none</td></tr><tr><td>Dave Johnston 2</td><td>none</td><td>none</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>none</td><td>none</td></tr><tr><td>Dave Johnston 3</td><td>Jan 2027</td><td>Jan 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td></tr><tr><td>Dave Johnston 4</td><td>none</td><td>none</td><td>Dec 2027</td><td>Dec 2027</td><td>Dec 2027</td><td>none</td><td>none</td></tr><tr><td>Jim Bridger 1</td><td>none</td><td>none</td><td>Dec 2037</td><td>Dec 2037</td><td>Dec 2037</td><td>none</td><td>none</td></tr><tr><td>Jim Bridger 2</td><td>none</td><td>none</td><td>Dec 2037</td><td>Dec 2037</td><td>Dec 2037</td><td>none</td><td>none</td></tr><tr><td>Jim Bridger 3</td><td>none</td><td>none</td><td>Dec 2037</td><td>Dec 2037</td><td>Dec 2037</td><td>none</td><td>none</td></tr><tr><td>Jim Bridger 4</td><td>none</td><td>none</td><td>Dec 2037</td><td>Dec 2037</td><td>Dec 2037</td><td>none</td><td>none</td></tr><tr><td>Naughton 1</td><td>none</td><td>none</td><td>Dec 2025</td><td>Dec 2025</td><td>Dec 2025</td><td>none</td><td>none</td></tr><tr><td>Naughton 2</td><td>none</td><td>none</td><td>Dec 2025</td><td>Dec 2025</td><td>Dec 2025</td><td>none</td><td>none</td></tr><tr><td>Naughton 3</td><td>none</td><td>none</td><td>Dec 2029</td><td>Dec 2029</td><td>Dec 2029</td><td>none</td><td>none</td></tr><tr><td>Wyodak 1</td><td>none</td><td>none</td><td>Dec 2039</td><td>Dec 2039</td><td>Dec 2039</td><td>none</td><td>none</td></tr></tbody></table></div>
+<p>"None" means that edition reported no planned retirement date for the unit. The table shows the editions from
+2019; earlier editions, back to 2001, are in the
+<a href="data/wyoming_coal_retirement_history.csv">full history</a>. The only earlier planned dates are for Neil
+Simpson 5 and Osage 1 to 3, which reported March 2014 in the 2011 to 2013 editions and retired that month. Naughton 3
+burned coal until its conversion to natural gas and is included for that reason. A missing date records what the
+owner reported to EIA; the form does not say why a date was added or removed. Every date shown for 2023, 2024 and
+2025 was checked against EIA's own workbook.</p>
 <h2>Indefinitely postponed or cancelled</h2>
 <p>These remain in some datasets with a "proposed" status, which can overstate the capacity in development if they
 are not excluded.</p>
 <div class="wrap"><table><thead><tr><th>Plant</th><th>Generator</th><th>Technology</th><th class="num">Capacity (MW)</th><th>County</th><th>Status</th><th class="num">EIA plant ID</th></tr></thead><tbody><tr><td>Chokecherry and Sierra Madre Wind</td><td>I-C</td><td>Onshore Wind Turbine</td><td class="num">500.0</td><td>Carbon</td><td>IP</td><td class="num">58987</td></tr><tr><td>Elk Basin Gasoline Plant</td><td>EMGEN</td><td>Natural Gas Internal Combustion Engine</td><td class="num">0.7</td><td>Park</td><td>IP</td><td class="num">52127</td></tr><tr><td>Medicine Bow</td><td>12</td><td>Onshore Wind Turbine</td><td class="num">0.7</td><td>Carbon</td><td>CN</td><td class="num">692</td></tr><tr><td>Medicine Bow</td><td>13</td><td>Onshore Wind Turbine</td><td class="num">0.7</td><td>Carbon</td><td>CN</td><td class="num">692</td></tr><tr><td>Uinta Wind</td><td>WIND1</td><td>Onshore Wind Turbine</td><td class="num">119.0</td><td>Uinta</td><td>IP</td><td class="num">68005</td></tr></tbody></table></div>
+<h2>Interconnection queue</h2>
+<p>Before a generator can connect to the grid, its developer must request interconnection from the transmission
+provider and pass through a series of studies. Berkeley Lab's <em>Queued Up</em> data file gathers these requests
+from every queue in the country. It lists <strong>400 requests</strong> for projects in Wyoming,
+covering requests through the end of 2025.</p>
+<div class="wrap"><table><thead><tr><th>Status</th><th class="num">Requests</th><th class="num">Capacity (MW)</th></tr></thead><tbody><tr><td>Withdrawn</td><td class="num">269</td><td class="num">62,148.1</td></tr><tr><td>Active</td><td class="num">73</td><td class="num">16,175.3</td></tr><tr><td>Operational</td><td class="num">51</td><td class="num">5,134.0</td></tr><tr><td>Suspended</td><td class="num">7</td><td class="num">2,359.0</td></tr></tbody></table></div>
+<p>At the end of 2025, 73 requests for 16,175.3 MW were active: 1.3 times Wyoming's
+existing capacity of 12,735.6 MW, and 2.2
+times the 7,206.6 MW of proposed generators reported to EIA. A queue request is an early
+step, not a plan to build: 26 of the active requests (5,210.5 MW) had signed an
+interconnection agreement. Of the 247 Wyoming requests entered in 2020 or earlier, 48
+(19%) reached commercial operation and 192 (78%)
+were withdrawn.</p>
+<h3>Active requests by technology</h3>
+<div class="wrap"><table><thead><tr><th>Technology (first resource)</th><th class="num">Active requests</th><th class="num">Capacity (MW)</th></tr></thead><tbody><tr><td>Wind</td><td class="num">32</td><td class="num">5,692.7</td></tr><tr><td>Solar</td><td class="num">23</td><td class="num">5,490.9</td></tr><tr><td>Gas</td><td class="num">11</td><td class="num">3,062.7</td></tr><tr><td>Nuclear</td><td class="num">2</td><td class="num">1,000.0</td></tr><tr><td>Battery</td><td class="num">5</td><td class="num">929.0</td></tr></tbody></table></div>
+<h3>Active requests by study phase</h3>
+<div class="wrap"><table><thead><tr><th>Study phase</th><th class="num">Active requests</th><th class="num">Capacity (MW)</th></tr></thead><tbody><tr><td>IA Executed</td><td class="num">26</td><td class="num">5,210.5</td></tr><tr><td>In Progress (unknown study)</td><td class="num">22</td><td class="num">3,720.1</td></tr><tr><td>Cluster Study</td><td class="num">14</td><td class="num">3,257.0</td></tr><tr><td>Facility Study</td><td class="num">2</td><td class="num">550.0</td></tr><tr><td>System Impact Study</td><td class="num">1</td><td class="num">350.0</td></tr></tbody></table></div>
+<h3>When requests are withdrawn</h3>
+<p>Of the 269 withdrawn requests, only 36
+(13%) carry a withdrawal date, almost all of them from
+PacifiCorp. For those 36, the median time from request to withdrawal was
+5.5 years, but so few are dated that the figure cannot be taken to
+represent Wyoming's queue as a whole.</p>
+<div class="wrap"><table><thead><tr><th>Queue operator</th><th class="num">Withdrawn requests</th><th class="num">With a withdrawal date</th></tr></thead><tbody><tr><td>PacifiCorp</td><td class="num">246</td><td class="num">31</td></tr><tr><td>CLPT</td><td class="num">13</td><td class="num">0</td></tr><tr><td>SPP</td><td class="num">3</td><td class="num">2</td></tr><tr><td>PRPA</td><td class="num">2</td><td class="num">0</td></tr><tr><td>PSCo</td><td class="num">2</td><td class="num">2</td></tr><tr><td>CAISO</td><td class="num">1</td><td class="num">1</td></tr><tr><td>MISO</td><td class="num">1</td><td class="num">0</td></tr><tr><td>WAPA-IS</td><td class="num">1</td><td class="num">0</td></tr></tbody></table></div>
+<p>Notes: figures count interconnection requests, not projects; one project can file more than one request, or
+file in more than one queue. Capacity is the first resource's size, so the storage part of a hybrid project is not
+added. The active capacity computed here for gas, solar and wind matches the Wyoming totals that Berkeley Lab
+publishes in the same file. Download: <a href="data/wyoming_interconnection_queue.csv">all 400
+requests</a>.</p>
 <h2>Reading this tracker</h2>
 <ul>
 <li>Every entry comes from EIA Form 860, as processed by PUDL and checked against EIA's own release. The EIA plant
@@ -52,7 +95,10 @@ commercial operation; IP, indefinitely postponed; CN, cancelled.</li>
 or government agency, including any organisation with "High Plains" in its name.</p>
 <p>Data derived from the <a href="https://catalyst.coop/pudl/">Public Utility Data Liberation project (PUDL)</a>,
 Catalyst Cooperative, licensed under CC-BY-4.0, which processes data reported to the U.S. Energy Information
-Administration. Text and data on this site are licensed under
+Administration. Interconnection-queue data from Berkeley Lab's <a href="https://emp.lbl.gov/queues">Queued Up</a>
+data file (Lawrence Berkeley National Laboratory and GridTracker), licensed under CC-BY-4.0. Transmission map
+data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, under the ODbL.
+Text and data on this site are licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>; code under the MIT licence.
 <a href="https://github.com/high-plains-open-energy-data/high-plains-open-energy-data.github.io">Source on GitHub</a>.</p>
 </footer>

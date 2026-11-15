@@ -1,0 +1,15 @@
+{
+  "osm_date": "20 October 2026",
+  "lines": 1799,
+  "substations": 578,
+  "km_by_voltage_class": {
+    "500 kV": 448,
+    "345 kV": 1100,
+    "230 kV": 5188,
+    "138 kV": 243,
+    "115 kV": 2636,
+    "69 kV": 1082,
+    "untagged": 2392
+  },
+  "km_total": 13090
+}

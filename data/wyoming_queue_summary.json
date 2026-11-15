@@ -1,0 +1,297 @@
+{
+  "edition": "Queued Up 2026 Edition (requests through the end of 2025)",
+  "requests": 400,
+  "by_status": {
+    "active": {
+      "count": 73,
+      "sum": 16175.3
+    },
+    "operational": {
+      "count": 51,
+      "sum": 5134.0
+    },
+    "suspended": {
+      "count": 7,
+      "sum": 2359.0
+    },
+    "withdrawn": {
+      "count": 269,
+      "sum": 62148.1
+    }
+  },
+  "active_by_type": {
+    "Wind": {
+      "count": 32,
+      "sum": 5692.7
+    },
+    "Solar": {
+      "count": 23,
+      "sum": 5490.9
+    },
+    "Gas": {
+      "count": 11,
+      "sum": 3062.7
+    },
+    "Nuclear": {
+      "count": 2,
+      "sum": 1000.0
+    },
+    "Battery": {
+      "count": 5,
+      "sum": 929.0
+    }
+  },
+  "active_by_phase": {
+    "IA Executed": {
+      "count": 26,
+      "sum": 5210.5
+    },
+    "In Progress (unknown study)": {
+      "count": 22,
+      "sum": 3720.1
+    },
+    "Cluster Study": {
+      "count": 14,
+      "sum": 3257.0
+    },
+    "Facility Study": {
+      "count": 2,
+      "sum": 550.0
+    },
+    "System Impact Study": {
+      "count": 1,
+      "sum": 350.0
+    }
+  },
+  "active_by_entity": {
+    "PacifiCorp": {
+      "count": 41,
+      "sum": 8633.3
+    },
+    "CLPT": {
+      "count": 20,
+      "sum": 4212.0
+    },
+    "TSGT": {
+      "count": 8,
+      "sum": 2390.0
+    },
+    "BHP": {
+      "count": 3,
+      "sum": 590.0
+    },
+    "PRPA": {
+      "count": 1,
+      "sum": 350.0
+    }
+  },
+  "withdrawal_date_coverage": {
+    "PacifiCorp": {
+      "dated": 31,
+      "total": 246
+    },
+    "CLPT": {
+      "dated": 0,
+      "total": 13
+    },
+    "SPP": {
+      "dated": 2,
+      "total": 3
+    },
+    "PRPA": {
+      "dated": 0,
+      "total": 2
+    },
+    "PSCo": {
+      "dated": 2,
+      "total": 2
+    },
+    "CAISO": {
+      "dated": 1,
+      "total": 1
+    },
+    "MISO": {
+      "dated": 0,
+      "total": 1
+    },
+    "WAPA-IS": {
+      "dated": 0,
+      "total": 1
+    }
+  },
+  "withdrawn_with_date": 36,
+  "median_years_request_to_withdrawal_dated": 5.5,
+  "requests_entered_2020_or_earlier": {
+    "active": {
+      "count": 5
+    },
+    "operational": {
+      "count": 48
+    },
+    "suspended": {
+      "count": 2
+    },
+    "withdrawn": {
+      "count": 192
+    }
+  },
+  "requests_by_year_and_status": {
+    "2001": {
+      "active": 0,
+      "operational": 4,
+      "suspended": 0,
+      "withdrawn": 0
+    },
+    "2002": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 1
+    },
+    "2003": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 6
+    },
+    "2004": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 2
+    },
+    "2005": {
+      "active": 0,
+      "operational": 1,
+      "suspended": 0,
+      "withdrawn": 2
+    },
+    "2006": {
+      "active": 0,
+      "operational": 3,
+      "suspended": 0,
+      "withdrawn": 1
+    },
+    "2007": {
+      "active": 0,
+      "operational": 9,
+      "suspended": 0,
+      "withdrawn": 23
+    },
+    "2008": {
+      "active": 0,
+      "operational": 3,
+      "suspended": 0,
+      "withdrawn": 28
+    },
+    "2009": {
+      "active": 0,
+      "operational": 5,
+      "suspended": 0,
+      "withdrawn": 19
+    },
+    "2010": {
+      "active": 0,
+      "operational": 3,
+      "suspended": 0,
+      "withdrawn": 1
+    },
+    "2011": {
+      "active": 0,
+      "operational": 2,
+      "suspended": 0,
+      "withdrawn": 4
+    },
+    "2012": {
+      "active": 0,
+      "operational": 1,
+      "suspended": 0,
+      "withdrawn": 4
+    },
+    "2013": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 2
+    },
+    "2015": {
+      "active": 1,
+      "operational": 8,
+      "suspended": 1,
+      "withdrawn": 1
+    },
+    "2016": {
+      "active": 4,
+      "operational": 7,
+      "suspended": 0,
+      "withdrawn": 9
+    },
+    "2017": {
+      "active": 0,
+      "operational": 2,
+      "suspended": 1,
+      "withdrawn": 44
+    },
+    "2018": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 15
+    },
+    "2019": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 19
+    },
+    "2020": {
+      "active": 0,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 11
+    },
+    "2021": {
+      "active": 3,
+      "operational": 2,
+      "suspended": 4,
+      "withdrawn": 11
+    },
+    "2022": {
+      "active": 22,
+      "operational": 1,
+      "suspended": 1,
+      "withdrawn": 29
+    },
+    "2023": {
+      "active": 10,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 25
+    },
+    "2024": {
+      "active": 13,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 11
+    },
+    "2025": {
+      "active": 20,
+      "operational": 0,
+      "suspended": 0,
+      "withdrawn": 1
+    }
+  },
+  "checks": {
+    "active_gw_computed": {
+      "Gas": 3.0627,
+      "Solar": 5.4909,
+      "Wind": 5.6927
+    },
+    "active_gw_published_by_lbnl": {
+      "Gas": 3.0627,
+      "Solar": 5.490900000000001,
+      "Wind": 5.692699999999999
+    },
+    "match": true
+  }
+}

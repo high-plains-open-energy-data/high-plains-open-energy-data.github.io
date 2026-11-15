@@ -1,0 +1,11 @@
+{
+  "first_edition": 2001,
+  "last_edition": 2025,
+  "units": 35,
+  "units_with_a_planned_date_in_any_edition": 16,
+  "verified_against_eia": {
+    "2023": 30,
+    "2024": 30,
+    "2025": 30
+  }
+}

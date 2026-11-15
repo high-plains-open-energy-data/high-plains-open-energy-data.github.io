@@ -4,10 +4,12 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 Georg
 header, main, footer { max-width: 920px; margin: 0 auto; padding: 0 20px; }
 header { border-bottom: 1px solid var(--line); padding-top: 28px; padding-bottom: 12px; }
 header .name { font-size: 1.5rem; font-weight: bold; color: var(--ink); text-decoration: none; }
-nav { margin-top: 8px; }
-nav a { margin-right: 18px; color: var(--accent); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-size: 0.95rem; }
+nav { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+nav a { color: var(--accent); text-decoration: none; font-family: Helvetica, Arial, sans-serif; font-size: 0.95rem; }
 nav a.current { color: var(--ink); font-weight: bold; }
 h1 { font-size: 1.9rem; line-height: 1.25; margin: 32px 0 8px; }
+h3 { font-size: 1.1rem; margin-top: 24px; }
+img { max-width: 100%; height: auto; }
 h2 { font-size: 1.3rem; margin-top: 36px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
 .lead { font-size: 1.15rem; color: var(--muted); }
 .asof { font-family: Helvetica, Arial, sans-serif; font-size: 0.85rem; color: var(--muted); }
@@ -17,9 +19,10 @@ th, td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: lef
 th { background: #f1eee6; }
 td.num, th.num { text-align: right; white-space: nowrap; }
 .wrap { overflow-x: auto; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin: 20px 0; }
 .card { border: 1px solid var(--line); padding: 14px 16px; background: #fff; }
 .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
 .note { border-left: 3px solid var(--accent); padding: 4px 14px; background: #f7f3ea; }
 code { font-size: 0.9em; }
 footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 12px; padding-bottom: 40px; font-family: Helvetica, Arial, sans-serif; font-size: 0.8rem; color: var(--muted); }
+main p, main li { overflow-wrap: anywhere; }

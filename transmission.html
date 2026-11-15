@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transmission | High Plains Open Energy Data</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+<a class="name" href="index.html">High Plains Open Energy Data</a>
+<nav><a href="index.html">Home</a><a href="data.html">Data</a><a href="monitor.html">Monitor</a><a href="transmission.html" class="current">Transmission</a><a href="teaching.html">Teaching</a></nav>
+</header>
+<main>
+
+<h1>Wyoming's transmission network</h1>
+<p class="asof">Map data as of 20 October 2026.</p>
+<p>A map of the power lines and substations in Wyoming at 69 kV and above, built entirely from public data. The
+lines and substations come from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, which volunteers map
+and which is detailed in Wyoming, though neither complete nor official.</p>
+<p><a href="assets/wyoming_transmission_map.png"><img src="assets/wyoming_transmission_map.png"
+alt="Map of Wyoming's transmission lines by voltage, with substations and the main towns" style="width:100%"></a></p>
+<h2>Line length by voltage</h2>
+<div class="wrap"><table><thead><tr><th>Voltage</th><th class="num">Length in Wyoming (km)</th></tr></thead><tbody><tr><td>500 kV</td><td class="num">448</td></tr><tr><td>345 kV</td><td class="num">1,100</td></tr><tr><td>230 kV</td><td class="num">5,188</td></tr><tr><td>138 kV</td><td class="num">243</td></tr><tr><td>115 kV</td><td class="num">2,636</td></tr><tr><td>69 kV</td><td class="num">1,082</td></tr><tr><td>Voltage not tagged</td><td class="num">2,392</td></tr><tr><td>Total</td><td class="num">13,090</td></tr></tbody></table></div>
+<p>The map shows 1,799 line sections and 578 substations. Lengths are measured inside
+Wyoming only; lines that cross the state line are cut at the border. About 2,392
+km of lines carry no voltage in OpenStreetMap and are drawn as dashed grey lines.</p>
+<h2>Downloads</h2>
+<ul>
+<li><a href="data/wyoming_transmission_lines_osm.geojson">wyoming_transmission_lines_osm.geojson</a>: every line
+section, with its OpenStreetMap ID, name, operator, voltage tag, voltage class, the counties it crosses and its
+length in Wyoming.</li>
+<li><a href="data/wyoming_substations_osm.geojson">wyoming_substations_osm.geojson</a>: every substation, with its
+OpenStreetMap ID, name, operator, voltage tag and county.</li>
+<li><a href="assets/wyoming_transmission_map.png">The map above</a>, as an image.</li>
+</ul>
+<p>GitHub displays GeoJSON files as an interactive map: open either file in the
+<a href="https://github.com/high-plains-open-energy-data/high-plains-open-energy-data.github.io/tree/main/data">repository</a> to zoom in and click on any line or substation.</p>
+<h2>Licence</h2>
+<p>Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available
+under the Open Database Licence (ODbL). The two GeoJSON files are derived from OpenStreetMap and are released under
+the <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>, not under this site's CC-BY-4.0 licence.
+County boundaries are from the U.S. Census Bureau's cartographic boundary files.</p>
+<p>Corrections to lines or voltages are best made in OpenStreetMap itself, where they benefit everyone; they will
+appear here when the map is next rebuilt.</p>
+
+</main>
+<footer>
+<p>High Plains Open Energy Data is an independent project. It is not affiliated with any utility, energy company
+or government agency, including any organisation with "High Plains" in its name.</p>
+<p>Data derived from the <a href="https://catalyst.coop/pudl/">Public Utility Data Liberation project (PUDL)</a>,
+Catalyst Cooperative, licensed under CC-BY-4.0, which processes data reported to the U.S. Energy Information
+Administration. Interconnection-queue data from Berkeley Lab's <a href="https://emp.lbl.gov/queues">Queued Up</a>
+data file (Lawrence Berkeley National Laboratory and GridTracker), licensed under CC-BY-4.0. Transmission map
+data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, under the ODbL.
+Text and data on this site are licensed under
+<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>; code under the MIT licence.
+<a href="https://github.com/high-plains-open-energy-data/high-plains-open-energy-data.github.io">Source on GitHub</a>.</p>
+</footer>
+</body>
+</html>

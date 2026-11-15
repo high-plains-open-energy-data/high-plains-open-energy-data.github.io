@@ -1,0 +1,14 @@
+{
+  "title": "High Plains Open Energy Data",
+  "upload_type": "dataset",
+  "description": "<p>Open, checked data on the energy system of Wyoming: generators, generation and in-state sales, a tracker of proposed and retiring generators, the history of planned coal retirement dates, and the Wyoming interconnection queue, with teaching material built on the same data. Every dataset is checked against its original source, and the checks are published with it.</p><p>Derived from the Public Utility Data Liberation project (Catalyst Cooperative, CC-BY-4.0), U.S. Energy Information Administration Forms 860, 861 and 923, and Berkeley Lab's Queued Up data file (Lawrence Berkeley National Laboratory and GridTracker, CC-BY-4.0). Website: https://high-plains-open-energy-data.github.io</p>",
+  "creators": [
+    {"name": "Parsons, Noah", "orcid": "0009-0000-7224-6040"}
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["Wyoming", "electricity", "open data", "EIA-860", "interconnection queue", "coal retirement"],
+  "related_identifiers": [
+    {"identifier": "https://high-plains-open-energy-data.github.io", "relation": "isDocumentedBy", "resource_type": "other"}
+  ]
+}
