@@ -1,0 +1,84 @@
+# Rebuild the PUDL-based datasets when PUDL publishes a new stable release.
+#
+# Runs every Monday, and on demand from the Actions tab. If PUDL has not changed, the job stops after the first
+# check. If it has, the job rebuilds the datasets, repeats every cross-check against EIA's own workbooks, rebuilds
+# the pages and commits the result. If any check fails, the job fails and nothing is committed; GitHub then emails
+# the repository owner.
+#
+# The interconnection-queue dataset is not rebuilt here: Berkeley Lab publishes its Queued Up file once a year, and
+# that dataset is rebuilt by hand with scripts/build_wyoming_queue.py when a new edition appears.
+name: Rebuild data when PUDL updates
+
+on:
+  schedule:
+    - cron: "17 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-data
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pandas pyarrow openpyxl
+
+      - name: Check for a new PUDL release
+        id: check
+        run: |
+          status=$(python scripts/check_pudl_release.py)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then status=changed; fi
+          echo "PUDL release: $status"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+
+      - name: Download the EIA-860 workbooks used for the cross-checks
+        if: steps.check.outputs.status == 'changed'
+        run: |
+          YEAR=$(python -c "import re; print(re.search(r'^YEAR = (\d+)', open('scripts/build_wyoming_data.py').read(), re.M).group(1))")
+          echo "YEAR=$YEAR" >> "$GITHUB_ENV"
+          mkdir -p eia860
+          for y in 2023 2024 $YEAR; do
+            [ -f "eia860/3_1_Generator_Y$y.xlsx" ] && continue
+            ok=0
+            for url in "https://www.eia.gov/electricity/data/eia860/xls/eia860$y.zip" \
+                       "https://www.eia.gov/electricity/data/eia860/archive/xls/eia860$y.zip"; do
+              # EIA answers some missing files with an HTML page, so test that a real zip arrived.
+              if curl -fsSL -o "eia860_$y.zip" "$url" && unzip -tq "eia860_$y.zip" > /dev/null; then ok=1; break; fi
+            done
+            [ "$ok" = 1 ] || { echo "Could not download EIA-860 $y"; exit 1; }
+            unzip -o -q "eia860_$y.zip" "3_1_Generator_Y$y.xlsx" -d eia860
+          done
+
+      - name: Rebuild the datasets and run every check
+        if: steps.check.outputs.status == 'changed'
+        run: |
+          python scripts/build_wyoming_data.py --eia860 "eia860/3_1_Generator_Y$YEAR.xlsx"
+          python scripts/build_retirement_history.py --verify \
+            "2023=eia860/3_1_Generator_Y2023.xlsx" "2024=eia860/3_1_Generator_Y2024.xlsx" \
+            "$YEAR=eia860/3_1_Generator_Y$YEAR.xlsx"
+          python scripts/check_pudl_release.py --write
+          python scripts/build_pages.py
+
+      - name: Commit the rebuilt data and pages
+        if: steps.check.outputs.status == 'changed'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data ./*.html
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Rebuild data from PUDL release of $(python -c "import json; print(json.load(open('data/pudl_release.json'))['pudl_stable_last_modified'])")"
+            git push
+          fi
