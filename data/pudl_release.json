@@ -2,7 +2,8 @@
   "tables": {
     "out_eia__yearly_generators": "Tue, 10 Nov 2026 20:45:59 GMT",
     "out_eia923__yearly_generation_fuel_combined": "Tue, 10 Nov 2026 20:45:58 GMT",
-    "core_eia861__yearly_sales": "Tue, 10 Nov 2026 20:43:21 GMT"
+    "core_eia861__yearly_sales": "Tue, 10 Nov 2026 20:43:21 GMT",
+    "out_eia923__monthly_generation_fuel_combined": "Tue, 10 Nov 2026 20:45:57 GMT"
   },
   "pudl_stable_last_modified": "10 November 2026"
 }

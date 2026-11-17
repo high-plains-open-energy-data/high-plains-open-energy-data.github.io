@@ -1,0 +1,26 @@
+{
+  "year": 2025,
+  "first_year": 2001,
+  "data_maturity_final_year": [
+    "final"
+  ],
+  "max_abs_diff_monthly_vs_annual_mwh": 0.0,
+  "counted_plant_years_compared_with_generator_allocation": 335,
+  "max_rel_diff_generator_allocation": 0.0,
+  "eia923_plants_compared": 27,
+  "eia923_total_wind_mwh": 12725057.0,
+  "pudl_total_wind_mwh": 12725057.0,
+  "eia923_max_abs_diff_annual_mwh": 0.0,
+  "eia923_max_abs_diff_monthly_mwh": 0.0,
+  "plants_final_year": 28,
+  "counted_plants_final_year": 25,
+  "fleet_capacity_factor_final_year": 0.3525,
+  "counted_plant_years": 370,
+  "excluded_plant_years": {
+    "generator entered service during year": 31,
+    "capacity changed during year": 19,
+    "no net generation reported": 7,
+    "no capacity record for the previous year": 5,
+    "generator retired during year": 5
+  }
+}

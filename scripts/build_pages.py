@@ -5,6 +5,7 @@ Usage:
 
 Run scripts/build_wyoming_data.py first. The pages are plain HTML with no build step.
 """
+import calendar
 import datetime
 import html
 import json
@@ -22,7 +23,7 @@ REPO = ORG + "/high-plains-open-energy-data.github.io"
 
 FUEL_NAMES = {"coal": "Coal", "wind": "Wind", "gas": "Natural gas", "hydro": "Hydro", "solar": "Solar",
               "other": "Other (incl. batteries)", "oil": "Oil", "nuclear": "Nuclear"}
-PAGES = [("index.html", "Home"), ("data.html", "Data"), ("monitor.html", "Monitor"),
+PAGES = [("index.html", "Home"), ("data.html", "Data"), ("wind.html", "Wind"), ("monitor.html", "Monitor"),
          ("transmission.html", "Transmission"), ("teaching.html", "Teaching")]
 
 
@@ -97,6 +98,9 @@ def main():
     rhist = pd.read_csv(DATA / "wyoming_coal_retirement_history.csv")
     tx = json.loads((DATA / "wyoming_transmission_summary.json").read_text())
     release = json.loads((DATA / "pudl_release.json").read_text()) if (DATA / "pudl_release.json").exists() else {}
+    wchecks = json.loads((DATA / "wind_checks.json").read_text())
+    wyears = pd.read_csv(DATA / "wyoming_wind_plant_years.csv")
+    wfleet = pd.read_csv(DATA / "wyoming_wind_fleet.csv")
 
     # ---------- Home ----------
     home = f"""
@@ -107,6 +111,8 @@ It starts with Wyoming.</p>
 <div class="cards">
 <div class="card"><h3><a href="data.html">Data</a></h3>Datasets built from public sources, with every figure
 checked against its original source and every step documented so it can be reproduced.</div>
+<div class="card"><h3><a href="wind.html">Wind</a></h3>How hard Wyoming's wind farms work: the capacity
+factor of every plant, each year since 2001 and each month, checked against EIA's own figures.</div>
 <div class="card"><h3><a href="monitor.html">Monitor</a></h3>An independent tracker of the generating capacity
 proposed, under construction and planned for retirement in the region, with a source for every entry.</div>
 <div class="card"><h3><a href="transmission.html">Transmission</a></h3>A map of Wyoming's power lines
@@ -194,7 +200,12 @@ generator that has burned coal, in every EIA-860 edition from {rchecks['first_ed
 {rchecks['last_edition']}, with its fuel, status and planned retirement date; and
 <a href="data/wyoming_coal_planned_retirement_by_edition.csv">wyoming_coal_planned_retirement_by_edition.csv</a>,
 one row per unit that has ever reported a planned retirement date.</li>
-<li><a href="data/checks.json">checks.json</a> and <a href="data/retirement_history_checks.json">retirement_history_checks.json</a>:
+<li><a href="data/wyoming_wind_plant_years.csv">wyoming_wind_plant_years.csv</a>,
+<a href="data/wyoming_wind_plant_months.csv">wyoming_wind_plant_months.csv</a> and
+<a href="data/wyoming_wind_fleet.csv">wyoming_wind_fleet.csv</a>: capacity factors for every Wyoming wind plant, by
+year and by month, and for the fleet; described on the <a href="wind.html">wind</a> page.</li>
+<li><a href="data/checks.json">checks.json</a>, <a href="data/retirement_history_checks.json">retirement_history_checks.json</a>
+and <a href="data/wind_checks.json">wind_checks.json</a>:
 the totals and cross-checks recorded when the data was built.</li>
 </ul>
 <h2>Sources</h2>
@@ -203,6 +214,8 @@ the totals and cross-checks recorded when the data was built.</li>
 <li>PUDL table <code>out_eia923__yearly_generation_fuel_combined</code> (EIA Form 923): net generation by plant and
 fuel.</li>
 <li>PUDL table <code>core_eia861__yearly_sales</code> (EIA Form 861): retail sales by utility and state.</li>
+<li>PUDL table <code>out_eia923__monthly_generation_fuel_combined</code> (EIA Form 923): monthly net generation by
+plant and fuel, used for the wind capacity factors.</li>
 <li>EIA-860 data releases, file <code>3_1_Generator_Y2025.xlsx</code> and its 2023 and 2024 equivalents, used to
 cross-check the PUDL figures.</li>
 <li>Berkeley Lab, <em>Queued Up</em> 2026 Edition data file, interconnection requests through the end of 2025.</li>
@@ -218,10 +231,11 @@ PUDL, against {checks.get('eia860_operable_generators','n/a')} generators and
 generators and {mw(checks.get('eia860_proposed_capacity_mw',0))} MW on EIA-860's proposed schedule. They match
 exactly once indefinitely postponed and cancelled projects are excluded, as described on the
 <a href="monitor.html">monitor</a> page.</li>
-</ul>
 <li>Planned retirement dates: for the {rchecks['units']} Wyoming units that have burned coal, the planned
 retirement month and year in PUDL were compared with EIA's own workbooks for
 {', '.join(sorted(rchecks['verified_against_eia']))}; all match.</li>
+<li>Wind generation: every Wyoming wind plant's 2025 net generation, for the year and for each month, matches EIA's
+own EIA-923 workbook to the megawatt-hour ({wchecks.get('eia923_plants_compared', 'n/a')} plants).</li>
 <li>Interconnection queue: the active capacity computed here for gas, solar and wind matches, to the megawatt, the
 Wyoming totals that Berkeley Lab publishes in the same file
 ({', '.join(f"{t} {v:.2f} GW" for t, v in queue['checks']['active_gw_published_by_lbnl'].items())}).</li>
@@ -390,6 +404,134 @@ commercial operation; IP, indefinitely postponed; CN, cancelled.</li>
 <p>Download the data: <a href="data/wyoming_proposed_generators_2025.csv">proposed generators</a>,
 <a href="data/wyoming_planned_retirements_2025.csv">planned retirements</a>.</p>
 """
+    # ---------- Wind ----------
+    Y = wchecks["year"]
+    fy = wfleet[(wfleet["period"] == "year") & wfleet["capacity_factor"].notna()].copy()
+    fy["year"] = fy["year"].astype(int)
+    fmo = wfleet[wfleet["period"] != "year"].copy()
+    fmo["month"] = fmo["month"].astype(int)
+    lo, hi = fy.loc[fy["capacity_factor"].idxmin()], fy.loc[fy["capacity_factor"].idxmax()]
+    fyY = fy.set_index("year").loc[Y]
+    mo_hi, mo_lo = fmo.loc[fmo["capacity_factor"].idxmax()], fmo.loc[fmo["capacity_factor"].idxmin()]
+    mo_period = fmo["period"].iloc[0].split(", ")[1].replace("-", " to ")
+    pY = wyears[wyears["year"] == Y].copy()
+    pY["fy"] = pd.to_datetime(pY["first_operating_date"]).dt.year
+    cY = pY[pY["counted"]].copy()
+
+    def cohort(a, b):
+        d = cY[cY["fy"].between(a, b)]
+        return len(d), d["net_generation_mwh"].sum() / (d["capacity_mw"] * d["hours"]).sum()
+
+    n_old, cf_old = cohort(1990, 2010)
+    n_new, cf_new = cohort(2020, Y)
+    pY["cap"] = pY["capacity_mw"].map(mw)
+    pY["gen"] = (pY["net_generation_mwh"] / 1e3).map(lambda x: f"{x:,.0f}")
+    pY["cf"] = pY["capacity_factor"].map(lambda x: "" if pd.isna(x) else f"{x:.1%}")
+    pY["since"] = pY["fy"].astype("Int64").astype(str)
+    pY["note"] = pY["excluded_reason"].fillna("").str.capitalize()
+    pY = pY.sort_values(["counted", "capacity_factor"], ascending=[False, False])
+    plant_tab = table(pY, [("plant_name_eia", "Plant"), ("county", "County"), ("since", "In service since"),
+                           ("cap", "Capacity (MW)"), ("gen", f"{Y} net generation (GWh)"),
+                           ("cf", "Capacity factor"), ("note", "Not counted because"),
+                           ("plant_id_eia", "EIA plant ID")], num={"cap", "gen", "cf", "plant_id_eia"})
+    fy["cf"] = fy["capacity_factor"].map(lambda x: f"{x:.1%}")
+    fy["share"] = fy["share_of_capacity_counted_pct"].map(lambda x: f"{x:.0f}%")
+    fy["plants_s"] = fy["plants"].astype(int).astype(str) + " of " + fy["all_plants"].astype(int).astype(str)
+    fy["twh"] = (fy["all_net_generation_mwh"] / 1e6).map(lambda x: f"{x:.2f}")
+    year_tab = table(fy.sort_values("year", ascending=False),
+                     [("year", "Year"), ("cf", "Fleet capacity factor"), ("plants_s", "Plants counted"),
+                      ("share", "Share of wind capacity counted"), ("twh", "All wind generation (TWh)")],
+                     num={"year", "cf", "share", "twh"})
+    zero = wyears[wyears["excluded_reason"] == "no net generation reported"]
+    zero_names = sorted(zero["plant_name_eia"].unique())
+    # The wind page must agree with the 2025 generation dataset on the Data page.
+    wrow = summary.set_index("fuel_type_code_pudl").loc["wind"]
+    if Y == 2025:
+        assert abs(wrow["capacity_mw"] - pY["capacity_mw"].sum()) < 0.05, "wind capacity disagrees with Data page"
+        assert abs(wrow["net_generation_mwh"] - pY["net_generation_mwh"].sum()) < 1, "wind generation disagrees"
+    excl = ", ".join(f"{v} {k}" for k, v in wchecks["excluded_plant_years"].items())
+    wind = f"""
+<h1>Wyoming wind capacity factors, {wchecks['first_year']} to {Y}</h1>
+<p class="asof">Dataset as of {AS_OF}. Covers every wind plant in Wyoming reported to EIA, using final data
+through {Y}.</p>
+<p>A wind farm's <strong>capacity factor</strong> is the electricity it generated in a period divided by what it
+would have generated running at full nameplate capacity for the whole period. It measures how much of the time, in
+effect, the turbines were producing at full output, and it depends on the wind, on the turbines, and on how often
+they were stopped for maintenance or because the grid could not take their power.</p>
+<h2>The fleet in {Y}</h2>
+<p>Wyoming had {len(pY)} wind plants with {mw(pY['capacity_mw'].sum())} MW of capacity at the end of {Y}, which
+generated {pY['net_generation_mwh'].sum() / 1e6:.2f} TWh. The {int(fyY['plants'])} plants that operated all year at
+unchanged capacity, {fyY['share_of_capacity_counted_pct']:.0f}% of the capacity, had a combined capacity factor of
+<strong>{fyY['capacity_factor']:.1%}</strong>. Plants that entered service in 2020 or later
+({n_new} plants) reached {cf_new:.1%} together, against {cf_old:.1%} for the {n_old} plants that entered service in
+2010 or earlier.</p>
+{plant_tab}
+<p>Capacity is the nameplate capacity of the plant's wind generators at the end of {Y}. Generation is net
+generation, after the plant's own use.</p>
+<h2>Year by year</h2>
+<p><a href="assets/wyoming_wind_fleet_cf.png"><img src="assets/wyoming_wind_fleet_cf.png"
+alt="Line chart of the Wyoming wind fleet's capacity factor each year from {int(fy['year'].min())} to {Y}, between
+{lo['capacity_factor']:.0%} and {hi['capacity_factor']:.0%}" style="width:100%"></a></p>
+<p>Since {int(fy['year'].min())}, the fleet capacity factor has ranged from {lo['capacity_factor']:.1%}
+({int(lo['year'])}) to {hi['capacity_factor']:.1%} ({int(hi['year'])}). Year-to-year changes mostly reflect the wind
+itself and the changing mix of plants, so a single year says little about any one plant.</p>
+{year_tab}
+<h2>Month by month</h2>
+<p><a href="assets/wyoming_wind_monthly_cf.png"><img src="assets/wyoming_wind_monthly_cf.png"
+alt="Bar chart of the Wyoming wind fleet's capacity factor by calendar month, highest in winter and lowest in
+summer" style="width:100%"></a></p>
+<p>Wyoming's wind farms generate most in winter. Over {mo_period}, the fleet's capacity factor was highest in
+{calendar.month_name[int(mo_hi['month'])]} ({mo_hi['capacity_factor']:.1%}) and lowest in
+{calendar.month_name[int(mo_lo['month'])]} ({mo_lo['capacity_factor']:.1%}).</p>
+<h2>Which plant-years are counted</h2>
+<p>A plant-year is counted only if every wind generator at the plant ran for the whole year at the same nameplate
+capacity as the year before. A plant's first year is partial, and a year in which turbines were added, retired or
+replaced would divide a year's generation by the wrong capacity, so those years are kept in the data with the reason
+but given no capacity factor. Of {wchecks['counted_plant_years'] + sum(wchecks['excluded_plant_years'].values())}
+plant-years from {wchecks['first_year']} to {Y}, {wchecks['counted_plant_years']} are counted; the rest are {excl}.
+{wchecks['first_year']} itself has no capacity factor because the data begin that year, so no plant has a record for
+the year before. Fleet figures are the total generation of the counted plants divided by their total possible
+generation, so large plants weigh more than small ones.</p>
+<h2>Checks</h2>
+<ul>
+<li>Every Wyoming wind plant's {Y} net generation, for the year and for each month, matches EIA's own EIA-923
+workbook to the megawatt-hour ({wchecks.get('eia923_plants_compared', 'n/a')} plants,
+{wchecks.get('eia923_total_wind_mwh', 0) / 1e6:.2f} TWh).</li>
+<li>For every plant-year, the monthly generation adds up to the annual figure (largest difference
+{wchecks['max_abs_diff_monthly_vs_annual_mwh']:g} MWh).</li>
+<li>For the {wchecks['counted_plant_years_compared_with_generator_allocation']} counted plant-years since 2008, PUDL's
+generator-level generation agrees with the plant-level figure (largest relative difference
+{wchecks['max_rel_diff_generator_allocation']:g}).</li>
+<li>Capacity and generation for {Y} agree with the <a href="data.html">2025 generation dataset</a>.</li>
+</ul>
+<h2>Notes and limitations</h2>
+<ul>
+<li>A low capacity factor is not by itself a sign of a poor site or poor turbines. EIA-923 does not report
+curtailment, outages or the wind resource, so this data cannot separate them.</li>
+<li>Nameplate capacity is as reported to EIA-860. A plant repowered with new turbines at unchanged nameplate
+capacity cannot be detected from these forms, so the year of the work may be counted.</li>
+<li>{len(zero_names)} plants ({", ".join(zero_names)}) reported no wind generation in {len(zero)} plant-years while
+still listed as existing; those years are not counted.</li>
+</ul>
+<h2>Downloads</h2>
+<ul>
+<li><a href="data/wyoming_wind_plant_years.csv">wyoming_wind_plant_years.csv</a>: one row for each plant and year, with
+location, operator, capacity, net generation, whether the year is counted and why not, and the capacity factor.</li>
+<li><a href="data/wyoming_wind_plant_months.csv">wyoming_wind_plant_months.csv</a>: one row for each plant and month
+of every counted plant-year.</li>
+<li><a href="data/wyoming_wind_fleet.csv">wyoming_wind_fleet.csv</a>: the fleet figures above, by year and by
+calendar month.</li>
+<li><a href="data/wind_checks.json">wind_checks.json</a>: the checks recorded when the data was built.</li>
+</ul>
+<h2>Sources and reproduction</h2>
+<p>Built from the PUDL tables <code>out_eia__yearly_generators</code> (EIA Form 860),
+<code>out_eia923__yearly_generation_fuel_combined</code> and <code>out_eia923__monthly_generation_fuel_combined</code>
+(EIA Form 923), and checked against EIA's EIA-923 workbook for {Y}. Run
+<code>python scripts/build_wind_capacity_factors.py --eia923 path/to/EIA923_Schedules_2_3_4_5_M_12_{Y}_Final.xlsx</code>
+and <code>python scripts/plot_wind.py</code> from the <a href="{REPO}">repository</a>. Please cite as: High Plains
+Open Energy Data (2026), <em>Wyoming wind capacity factors, {wchecks['first_year']} to {Y}</em>, derived from the
+Public Utility Data Liberation project (Catalyst Cooperative) and U.S. EIA Forms 860 and 923.</p>
+"""
     # ---------- Transmission ----------
     tx_rows = pd.DataFrame([{"cls": k, "km": f"{v:,}"} for k, v in tx["km_by_voltage_class"].items()]
                            + [{"cls": "Total", "km": f"{tx['km_total']:,}"}])
@@ -447,7 +589,7 @@ release published on 10 November 2026, so later releases may change some figures
 <p>Teachers who use the lesson are warmly invited to <a href="{REPO}/issues">open an issue</a> with feedback.</p>
 <p class="asof">As of {AS_OF}.</p>
 """
-    for fn, title, body in [("index.html", "Home", home), ("data.html", "Data", data),
+    for fn, title, body in [("index.html", "Home", home), ("data.html", "Data", data), ("wind.html", "Wind", wind),
                             ("monitor.html", "Monitor", monitor), ("transmission.html", "Transmission", transmission),
                             ("teaching.html", "Teaching", teaching)]:
         (ROOT / fn).write_text(page(fn, title, body), encoding="utf-8")

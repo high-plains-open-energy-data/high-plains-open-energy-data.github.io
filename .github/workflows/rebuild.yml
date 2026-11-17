@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pandas pyarrow openpyxl
+        run: pip install pandas pyarrow openpyxl matplotlib
 
       - name: Check for a new PUDL release
         id: check
@@ -60,6 +60,18 @@ jobs:
             unzip -o -q "eia860_$y.zip" "3_1_Generator_Y$y.xlsx" -d eia860
           done
 
+      - name: Download the EIA-923 workbook used for the wind cross-check
+        if: steps.check.outputs.status == 'changed'
+        run: |
+          mkdir -p eia923
+          ok=0
+          for url in "https://www.eia.gov/electricity/data/eia923/xls/f923_$YEAR.zip" \
+                     "https://www.eia.gov/electricity/data/eia923/archive/xls/f923_$YEAR.zip"; do
+            if curl -fsSL -o "f923_$YEAR.zip" "$url" && unzip -tq "f923_$YEAR.zip" > /dev/null; then ok=1; break; fi
+          done
+          [ "$ok" = 1 ] || { echo "Could not download EIA-923 $YEAR"; exit 1; }
+          unzip -o -q -j "f923_$YEAR.zip" "EIA923_Schedules_2_3_4_5_M_12_${YEAR}_Final.xlsx" -d eia923
+
       - name: Rebuild the datasets and run every check
         if: steps.check.outputs.status == 'changed'
         run: |
@@ -67,6 +79,9 @@ jobs:
           python scripts/build_retirement_history.py --verify \
             "2023=eia860/3_1_Generator_Y2023.xlsx" "2024=eia860/3_1_Generator_Y2024.xlsx" \
             "$YEAR=eia860/3_1_Generator_Y$YEAR.xlsx"
+          python scripts/build_wind_capacity_factors.py \
+            --eia923 "eia923/EIA923_Schedules_2_3_4_5_M_12_${YEAR}_Final.xlsx"
+          python scripts/plot_wind.py
           python scripts/check_pudl_release.py --write
           python scripts/build_pages.py
 
@@ -75,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data ./*.html
+          git add data assets ./*.html
           if git diff --cached --quiet; then
             echo "Nothing changed."
           else

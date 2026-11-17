@@ -1,0 +1,438 @@
+plant_id_eia,plant_name_eia,year,county,latitude,longitude,utility_name_eia,first_operating_date,generators,capacity_mw,net_generation_mwh,hours,counted,excluded_reason,capacity_factor
+67193,Anticline Wind,2024,Natrona,43.146077,-106.347251,"Anticline Wind, LLC",2024-12-01,1,124.3,16579.0,8784,False,generator entered service during year,
+67193,Anticline Wind,2025,Natrona,43.146077,-106.347251,"Anticline Wind, LLC",2024-12-01,1,124.3,386947.0,8760,True,,0.3554
+65403,Boswell Wind,2024,Albany,41.919,-105.869,"Boswell Wind, LLC",2024-12-01,1,329.8,3229.0,8784,False,generator entered service during year,
+65403,Boswell Wind,2025,Albany,41.919,-105.869,"Boswell Wind, LLC",2024-12-01,1,329.8,1184619.0,8760,True,,0.41
+57090,Campbell Hill Windpower,2009,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,30500.0,8760,False,generator entered service during year,
+57090,Campbell Hill Windpower,2010,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,294156.0,8760,True,,0.3392
+57090,Campbell Hill Windpower,2011,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,362480.0,8760,True,,0.418
+57090,Campbell Hill Windpower,2012,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,339071.0,8784,True,,0.3899
+57090,Campbell Hill Windpower,2013,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,337581.0,8760,True,,0.3893
+57090,Campbell Hill Windpower,2014,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,331374.0,8760,True,,0.3821
+57090,Campbell Hill Windpower,2015,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,293519.0,8760,True,,0.3385
+57090,Campbell Hill Windpower,2016,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,332386.0,8784,True,,0.3822
+57090,Campbell Hill Windpower,2017,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,311590.0,8760,True,,0.3593
+57090,Campbell Hill Windpower,2018,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,308503.0,8760,True,,0.3557
+57090,Campbell Hill Windpower,2019,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,323963.0,8760,True,,0.3736
+57090,Campbell Hill Windpower,2020,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,328719.0,8784,True,,0.378
+57090,Campbell Hill Windpower,2021,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,301532.0,8760,True,,0.3477
+57090,Campbell Hill Windpower,2022,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,317726.0,8760,True,,0.3664
+57090,Campbell Hill Windpower,2023,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,296303.0,8760,True,,0.3417
+57090,Campbell Hill Windpower,2024,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,282412.0,8784,True,,0.3248
+57090,Campbell Hill Windpower,2025,Converse,43.01455,-105.999,Duke Energy Renewables Services,2009-12-01,1,99.0,253677.0,8760,True,,0.2925
+57093,Casper Wind Farm,2009,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,6122.0,8760,False,generator entered service during year,
+57093,Casper Wind Farm,2010,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,38018.0,8760,True,,0.2553
+57093,Casper Wind Farm,2011,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,48822.0,8760,True,,0.3278
+57093,Casper Wind Farm,2012,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,45768.0,8784,True,,0.3065
+57093,Casper Wind Farm,2013,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,43971.0,8760,True,,0.2953
+57093,Casper Wind Farm,2014,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,42376.0,8760,True,,0.2846
+57093,Casper Wind Farm,2015,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,37035.0,8760,True,,0.2487
+57093,Casper Wind Farm,2016,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,42051.0,8784,True,,0.2816
+57093,Casper Wind Farm,2017,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,41131.0,8760,True,,0.2762
+57093,Casper Wind Farm,2018,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,30221.0,8760,True,,0.2029
+57093,Casper Wind Farm,2019,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,11095.0,8760,True,,0.0745
+57093,Casper Wind Farm,2020,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,20687.0,8784,True,,0.1385
+57093,Casper Wind Farm,2021,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,14685.0,8760,True,,0.0986
+57093,Casper Wind Farm,2022,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,14017.0,8760,True,,0.0941
+57093,Casper Wind Farm,2023,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,5736.0,8760,True,,0.0385
+57093,Casper Wind Farm,2024,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,0.0,8784,False,no net generation reported,
+57093,Casper Wind Farm,2025,Natrona,42.884703,-106.221442,Chevron USA,2009-12-01,1,17.0,0.0,8760,False,no net generation reported,
+63914,Cedar Springs I,2020,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,146407.0,8784,False,generator entered service during year,
+63914,Cedar Springs I,2021,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,760259.0,8760,True,,0.4339
+63914,Cedar Springs I,2022,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,821141.0,8760,True,,0.4687
+63914,Cedar Springs I,2023,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,791303.0,8760,True,,0.4517
+63914,Cedar Springs I,2024,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,749149.0,8784,True,,0.4264
+63914,Cedar Springs I,2025,Converse,43.019714,-105.472139,"Cedar Springs Wind, LLC",2020-12-01,1,200.0,699700.0,8760,True,,0.3994
+63915,Cedar Springs II,2020,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,116063.0,8784,False,generator entered service during year,
+63915,Cedar Springs II,2021,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,670071.0,8760,True,,0.3825
+63915,Cedar Springs II,2022,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,603521.0,8760,True,,0.3445
+63915,Cedar Springs II,2023,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,580916.0,8760,True,,0.3316
+63915,Cedar Springs II,2024,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,599952.0,8784,True,,0.3415
+63915,Cedar Springs II,2025,Converse,42.969007,-105.365616,PacifiCorp,2020-12-01,1,200.0,652391.0,8760,True,,0.3724
+63916,Cedar Springs III,2020,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,46215.0,8784,False,generator entered service during year,
+63916,Cedar Springs III,2021,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,528032.0,8760,True,,0.4532
+63916,Cedar Springs III,2022,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,568235.0,8760,True,,0.4877
+63916,Cedar Springs III,2023,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,556242.0,8760,True,,0.4774
+63916,Cedar Springs III,2024,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,527412.0,8784,True,,0.4514
+63916,Cedar Springs III,2025,Converse,43.076692,-105.584352,"Cedar Springs Wind III, LLC",2020-12-01,1,133.0,475381.0,8760,True,,0.408
+67289,Cedar Springs Wind IV,2025,Converse,43.100801,-105.711529,"Cedar Springs Wind IV, LLC",2025-01-01,1,390.4,1055641.0,8760,False,generator entered service during year,
+63436,Corriedale Wind Energy,2020,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,37079.0,8784,False,generator entered service during year,
+63436,Corriedale Wind Energy,2021,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,218461.0,8760,True,,0.475
+63436,Corriedale Wind Energy,2022,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,241680.0,8760,True,,0.5255
+63436,Corriedale Wind Energy,2023,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,203856.0,8760,True,,0.4433
+63436,Corriedale Wind Energy,2024,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,209040.0,8784,True,,0.4533
+63436,Corriedale Wind Energy,2025,Laramie,41.1133,-104.984011,Black Hills Service Company LLC,2020-11-01,1,52.5,214312.0,8760,True,,0.466
+57299,Dunlap,2010,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,102467.0,8760,False,generator entered service during year,
+57299,Dunlap,2011,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,115.8,421086.0,8760,False,capacity changed during year,
+57299,Dunlap,2012,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,115.8,387973.0,8784,True,,0.3814
+57299,Dunlap,2013,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,115.8,409613.0,8760,True,,0.4038
+57299,Dunlap,2014,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,115.8,382995.0,8760,True,,0.3776
+57299,Dunlap,2015,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,115.8,339706.0,8760,True,,0.3349
+57299,Dunlap,2016,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,388498.0,8784,False,capacity changed during year,
+57299,Dunlap,2017,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,351261.0,8760,True,,0.3612
+57299,Dunlap,2018,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,391874.0,8760,True,,0.403
+57299,Dunlap,2019,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,384833.0,8760,True,,0.3958
+57299,Dunlap,2020,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,111.0,388242.0,8784,True,,0.3982
+57299,Dunlap,2021,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,129.5,435043.0,8760,False,capacity changed during year,
+57299,Dunlap,2022,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,129.5,469881.0,8760,True,,0.4142
+57299,Dunlap,2023,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,129.5,432029.0,8760,True,,0.3808
+57299,Dunlap,2024,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,129.5,366476.0,8784,True,,0.3222
+57299,Dunlap,2025,Carbon,42.043611,-106.160278,PacifiCorp,2010-10-01,1,129.5,416651.0,8760,True,,0.3673
+62591,Ekola Flats,2020,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,65569.0,8784,False,generator entered service during year,
+62591,Ekola Flats,2021,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,736904.0,8760,True,,0.3353
+62591,Ekola Flats,2022,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,805728.0,8760,True,,0.3666
+62591,Ekola Flats,2023,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,753554.0,8760,True,,0.3429
+62591,Ekola Flats,2024,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,748141.0,8784,True,,0.3395
+62591,Ekola Flats,2025,Carbon,41.932405,-106.35843,PacifiCorp,2020-12-01,1,250.9,736070.0,8760,True,,0.3349
+55607,Foote Creek I,2001,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,139620.0,8760,False,no capacity record for the previous year,
+55607,Foote Creek I,2002,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,140226.0,8760,True,,0.3867
+55607,Foote Creek I,2003,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,127544.0,8760,True,,0.3517
+55607,Foote Creek I,2004,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,132049.0,8784,True,,0.3631
+55607,Foote Creek I,2005,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,132607.0,8760,True,,0.3656
+55607,Foote Creek I,2006,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,129329.0,8760,True,,0.3566
+55607,Foote Creek I,2007,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,121227.0,8760,True,,0.3343
+55607,Foote Creek I,2008,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,136107.0,8784,True,,0.3743
+55607,Foote Creek I,2009,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,110452.0,8760,True,,0.3046
+55607,Foote Creek I,2010,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,118767.0,8760,True,,0.3275
+55607,Foote Creek I,2011,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,134194.0,8760,True,,0.37
+55607,Foote Creek I,2012,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,108555.0,8784,True,,0.2985
+55607,Foote Creek I,2013,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,113973.0,8760,True,,0.3143
+55607,Foote Creek I,2014,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,110628.0,8760,True,,0.305
+55607,Foote Creek I,2015,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,104354.0,8760,True,,0.2877
+55607,Foote Creek I,2016,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,138352.0,8784,True,,0.3804
+55607,Foote Creek I,2017,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,126928.0,8760,True,,0.35
+55607,Foote Creek I,2018,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,133413.0,8760,True,,0.3679
+55607,Foote Creek I,2019,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,121307.0,8760,True,,0.3345
+55607,Foote Creek I,2020,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,49196.0,8784,True,,0.1353
+55607,Foote Creek I,2021,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,154512.0,8760,True,,0.426
+55607,Foote Creek I,2022,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,208749.0,8760,True,,0.5756
+55607,Foote Creek I,2023,Carbon,41.6283,-106.2013,PacifiCorp,1999-04-01,1,41.4,215530.0,8760,False,generator retired during year,
+55608,Foote Creek II,2001,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6107.0,8760,False,no capacity record for the previous year,
+55608,Foote Creek II,2002,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6637.0,8760,True,,0.4209
+55608,Foote Creek II,2003,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6055.0,8760,True,,0.384
+55608,Foote Creek II,2004,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,0.0,8784,False,no net generation reported,
+55608,Foote Creek II,2005,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5477.0,8760,True,,0.3473
+55608,Foote Creek II,2006,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6187.0,8760,True,,0.3924
+55608,Foote Creek II,2007,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,4976.0,8760,True,,0.3156
+55608,Foote Creek II,2008,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,3883.0,8784,True,,0.2456
+55608,Foote Creek II,2009,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,3597.0,8760,True,,0.2281
+55608,Foote Creek II,2010,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,4549.0,8760,True,,0.2885
+55608,Foote Creek II,2011,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5900.0,8760,True,,0.3742
+55608,Foote Creek II,2012,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5498.0,8784,True,,0.3477
+55608,Foote Creek II,2013,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6311.0,8760,True,,0.4002
+55608,Foote Creek II,2014,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,6389.0,8760,True,,0.4052
+55608,Foote Creek II,2015,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5136.0,8760,True,,0.3257
+55608,Foote Creek II,2016,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5439.0,8784,True,,0.344
+55608,Foote Creek II,2017,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5390.0,8760,True,,0.3418
+55608,Foote Creek II,2018,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5929.0,8760,True,,0.376
+55608,Foote Creek II,2019,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,5326.0,8760,True,,0.3378
+55608,Foote Creek II,2023,Albany,41.657539,-106.189183,PacifiCorp,1999-06-01,1,1.8,0.0,8760,False,generator retired during year,
+55609,Foote Creek III,2001,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,70870.0,8760,False,no capacity record for the previous year,
+55609,Foote Creek III,2002,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,78598.0,8760,True,,0.3618
+55609,Foote Creek III,2003,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,62401.0,8760,True,,0.2872
+55609,Foote Creek III,2004,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,0.0,8784,False,no net generation reported,
+55609,Foote Creek III,2005,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,71088.0,8760,True,,0.3272
+55609,Foote Creek III,2006,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,73888.0,8760,True,,0.3401
+55609,Foote Creek III,2007,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,71170.0,8760,True,,0.3276
+55609,Foote Creek III,2008,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,85342.0,8784,True,,0.3918
+55609,Foote Creek III,2009,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,61362.0,8760,True,,0.2825
+55609,Foote Creek III,2010,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,71717.0,8760,True,,0.3301
+55609,Foote Creek III,2011,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,79073.0,8760,True,,0.364
+55609,Foote Creek III,2012,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,72490.0,8784,True,,0.3328
+55609,Foote Creek III,2013,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,81460.0,8760,True,,0.375
+55609,Foote Creek III,2014,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,80479.0,8760,True,,0.3704
+55609,Foote Creek III,2015,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,60124.0,8760,True,,0.2768
+55609,Foote Creek III,2016,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,74735.0,8784,True,,0.3431
+55609,Foote Creek III,2017,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,63891.0,8760,True,,0.2941
+55609,Foote Creek III,2018,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,71045.0,8760,True,,0.327
+55609,Foote Creek III,2019,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,37209.0,8760,True,,0.1713
+55609,Foote Creek III,2023,Albany,41.666469,-106.183278,PacifiCorp,1999-06-01,1,24.8,14560.0,8760,False,generator retired during year,
+55610,Foote Creek IV,2001,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,58563.0,8760,False,no capacity record for the previous year,
+55610,Foote Creek IV,2002,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,50573.0,8760,True,,0.3436
+55610,Foote Creek IV,2003,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,0.0,8760,False,no net generation reported,
+55610,Foote Creek IV,2004,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,0.0,8784,False,no net generation reported,
+55610,Foote Creek IV,2005,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,54664.0,8760,True,,0.3714
+55610,Foote Creek IV,2006,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,54140.0,8760,True,,0.3679
+55610,Foote Creek IV,2007,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,51159.0,8760,True,,0.3476
+55610,Foote Creek IV,2008,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,53340.0,8784,True,,0.3615
+55610,Foote Creek IV,2009,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,48634.0,8760,True,,0.3305
+55610,Foote Creek IV,2010,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,47910.0,8760,True,,0.3255
+55610,Foote Creek IV,2011,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,0.0,8760,False,no net generation reported,
+55610,Foote Creek IV,2012,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,53878.0,8784,True,,0.3651
+55610,Foote Creek IV,2013,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,59725.0,8760,True,,0.4058
+55610,Foote Creek IV,2014,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,62304.0,8760,True,,0.4234
+55610,Foote Creek IV,2015,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,50786.0,8760,True,,0.3451
+55610,Foote Creek IV,2016,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,56511.0,8784,True,,0.3829
+55610,Foote Creek IV,2017,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,47514.0,8760,True,,0.3229
+55610,Foote Creek IV,2018,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,52236.0,8760,True,,0.3549
+55610,Foote Creek IV,2019,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,51370.0,8760,True,,0.3491
+55610,Foote Creek IV,2023,Carbon,41.6744,-106.1805,PacifiCorp,2000-08-01,1,16.8,11625.0,8760,False,generator retired during year,
+67916,Foote Creek Rim,2024,Carbon,41.6283,-106.2013,PacifiCorp,2024-12-01,1,134.8,65029.0,8784,False,generator entered service during year,
+67916,Foote Creek Rim,2025,Carbon,41.6283,-106.2013,PacifiCorp,2024-12-01,1,134.8,636186.0,8760,True,,0.5388
+56841,Glenrock,2008,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,1,99.0,0.0,8784,False,generator entered service during year,
+56841,Glenrock,2009,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,138.0,337581.0,8760,False,generator entered service during year,
+56841,Glenrock,2010,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,138.0,387908.0,8760,True,,0.3209
+56841,Glenrock,2011,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,144.0,471028.0,8760,False,capacity changed during year,
+56841,Glenrock,2012,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,144.0,427130.0,8784,True,,0.3377
+56841,Glenrock,2013,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,144.0,444310.0,8760,True,,0.3522
+56841,Glenrock,2014,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,144.0,411827.0,8760,True,,0.3265
+56841,Glenrock,2015,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,144.0,398230.0,8760,True,,0.3157
+56841,Glenrock,2016,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,138.0,430345.0,8784,False,capacity changed during year,
+56841,Glenrock,2017,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,138.0,367724.0,8760,True,,0.3042
+56841,Glenrock,2018,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,138.0,421454.0,8760,True,,0.3486
+56841,Glenrock,2019,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,382964.0,8760,False,capacity changed during year,
+56841,Glenrock,2020,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,557397.0,8784,True,,0.3832
+56841,Glenrock,2021,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,466623.0,8760,True,,0.3217
+56841,Glenrock,2022,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,451658.0,8760,True,,0.3113
+56841,Glenrock,2023,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,314065.0,8760,True,,0.2165
+56841,Glenrock,2024,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,400989.0,8784,True,,0.2757
+56841,Glenrock,2025,Converse,43.0181,-105.835278,PacifiCorp,2008-12-01,2,165.6,469225.0,8760,True,,0.3235
+56960,Happy Jack Windpower Project,2008,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,0.0,8784,False,generator entered service during year,
+56960,Happy Jack Windpower Project,2009,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,84081.0,8760,True,,0.3265
+56960,Happy Jack Windpower Project,2010,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,82363.0,8760,True,,0.3198
+56960,Happy Jack Windpower Project,2011,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,90152.0,8760,True,,0.35
+56960,Happy Jack Windpower Project,2012,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,85028.0,8784,True,,0.3292
+56960,Happy Jack Windpower Project,2013,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,86950.0,8760,True,,0.3376
+56960,Happy Jack Windpower Project,2014,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,89580.0,8760,True,,0.3478
+56960,Happy Jack Windpower Project,2015,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,72216.0,8760,True,,0.2804
+56960,Happy Jack Windpower Project,2016,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,85648.0,8784,True,,0.3316
+56960,Happy Jack Windpower Project,2017,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,83593.0,8760,True,,0.3246
+56960,Happy Jack Windpower Project,2018,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,80316.0,8760,True,,0.3119
+56960,Happy Jack Windpower Project,2019,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,76793.0,8760,True,,0.2982
+56960,Happy Jack Windpower Project,2020,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,86605.0,8784,True,,0.3354
+56960,Happy Jack Windpower Project,2021,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,67746.0,8760,True,,0.263
+56960,Happy Jack Windpower Project,2022,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,71291.0,8760,True,,0.2768
+56960,Happy Jack Windpower Project,2023,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,58697.0,8760,True,,0.2279
+56960,Happy Jack Windpower Project,2024,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,56779.0,8784,True,,0.2199
+56960,Happy Jack Windpower Project,2025,Laramie,41.139722,-104.997778,Duke Energy Renewables Services,2008-08-01,1,29.4,58706.0,8760,True,,0.2279
+57040,High Plains,2009,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,99.0,72656.0,8760,False,generator entered service during year,
+57040,High Plains,2010,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,99.0,257456.0,8760,True,,0.2969
+57040,High Plains,2011,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,103.3,335463.0,8760,False,capacity changed during year,
+57040,High Plains,2012,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,103.3,316599.0,8784,True,,0.3489
+57040,High Plains,2013,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,103.3,341250.0,8760,True,,0.3771
+57040,High Plains,2014,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,103.3,324218.0,8760,True,,0.3583
+57040,High Plains,2015,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,103.3,250864.0,8760,True,,0.2772
+57040,High Plains,2016,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,99.0,316175.0,8784,False,capacity changed during year,
+57040,High Plains,2017,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,99.0,279904.0,8760,True,,0.3228
+57040,High Plains,2018,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,99.0,327035.0,8760,True,,0.3771
+57040,High Plains,2019,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,235562.0,8760,False,capacity changed during year,
+57040,High Plains,2020,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,358815.0,8784,True,,0.3346
+57040,High Plains,2021,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,333898.0,8760,True,,0.3122
+57040,High Plains,2022,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,383965.0,8760,True,,0.359
+57040,High Plains,2023,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,342139.0,8760,True,,0.3199
+57040,High Plains,2024,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,274080.0,8784,True,,0.2555
+57040,High Plains,2025,Albany,41.675052,-106.011124,PacifiCorp,2009-09-01,1,122.1,341222.0,8760,True,,0.319
+57039,McFadden Ridge,2009,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,20558.0,8760,False,generator entered service during year,
+57039,McFadden Ridge,2010,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,77364.0,8760,True,,0.3099
+57039,McFadden Ridge,2011,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,102584.0,8760,True,,0.4109
+57039,McFadden Ridge,2012,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,29.7,94789.0,8784,False,capacity changed during year,
+57039,McFadden Ridge,2013,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,29.7,103727.0,8760,True,,0.3987
+57039,McFadden Ridge,2014,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,29.7,98411.0,8760,True,,0.3783
+57039,McFadden Ridge,2015,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,29.7,78271.0,8760,True,,0.3008
+57039,McFadden Ridge,2016,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,95925.0,8784,False,capacity changed during year,
+57039,McFadden Ridge,2017,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,84559.0,8760,True,,0.3387
+57039,McFadden Ridge,2018,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,28.5,100324.0,8760,True,,0.4018
+57039,McFadden Ridge,2019,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,75204.0,8760,False,capacity changed during year,
+57039,McFadden Ridge,2020,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,109272.0,8784,True,,0.3534
+57039,McFadden Ridge,2021,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,102523.0,8760,True,,0.3325
+57039,McFadden Ridge,2022,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,115716.0,8760,True,,0.3753
+57039,McFadden Ridge,2023,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,104346.0,8760,True,,0.3384
+57039,McFadden Ridge,2024,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,84133.0,8784,True,,0.2721
+57039,McFadden Ridge,2025,Albany,41.7244,-105.9906,PacifiCorp,2009-10-01,1,35.2,104770.0,8760,True,,0.3398
+692,Medicine Bow,2001,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,6.2,16199.0,8760,False,no capacity record for the previous year,
+692,Medicine Bow,2002,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,6.2,19050.0,8760,True,,0.3508
+692,Medicine Bow,2003,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,6.2,15729.0,8760,True,,0.2896
+692,Medicine Bow,2004,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,6.2,14958.0,8784,True,,0.2747
+692,Medicine Bow,2005,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,15016.0,8760,False,generator entered service during year,
+692,Medicine Bow,2006,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,20435.0,8760,True,,0.2713
+692,Medicine Bow,2007,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,16880.0,8760,True,,0.2241
+692,Medicine Bow,2008,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,25669.0,8784,True,,0.3398
+692,Medicine Bow,2009,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,23512.0,8760,True,,0.3121
+692,Medicine Bow,2010,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,10,8.6,21104.0,8760,True,,0.2801
+692,Medicine Bow,2011,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,15771.0,8760,False,capacity changed during year,
+692,Medicine Bow,2012,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,17493.0,8784,True,,0.3265
+692,Medicine Bow,2013,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,17893.0,8760,True,,0.3348
+692,Medicine Bow,2014,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,10317.0,8760,True,,0.1931
+692,Medicine Bow,2015,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,14703.0,8760,True,,0.2752
+692,Medicine Bow,2016,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,8182.0,8784,True,,0.1527
+692,Medicine Bow,2017,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,18217.0,8760,True,,0.3409
+692,Medicine Bow,2018,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,9,6.1,17439.0,8760,True,,0.3264
+692,Medicine Bow,2019,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,2,6.2,15534.0,8760,False,capacity changed during year,
+692,Medicine Bow,2020,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,2,6.2,16121.0,8784,True,,0.296
+692,Medicine Bow,2021,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,2,6.2,18094.0,8760,True,,0.3331
+692,Medicine Bow,2022,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,2,6.2,15733.0,8760,True,,0.2897
+692,Medicine Bow,2023,Carbon,41.835278,-106.242778,SRIV Partnership LLC,1998-04-01,2,6.2,10867.0,8760,True,,0.2001
+56753,Mountain Wind Power II LLC,2008,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,54225.0,8784,False,generator entered service during year,
+56753,Mountain Wind Power II LLC,2009,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,202844.0,8760,True,,0.2894
+56753,Mountain Wind Power II LLC,2010,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,202072.0,8760,True,,0.2883
+56753,Mountain Wind Power II LLC,2011,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,240846.0,8760,True,,0.3437
+56753,Mountain Wind Power II LLC,2012,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,227793.0,8784,True,,0.3242
+56753,Mountain Wind Power II LLC,2013,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,227852.0,8760,True,,0.3251
+56753,Mountain Wind Power II LLC,2014,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,255792.0,8760,True,,0.365
+56753,Mountain Wind Power II LLC,2015,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,183055.0,8760,True,,0.2612
+56753,Mountain Wind Power II LLC,2016,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,211254.0,8784,True,,0.3006
+56753,Mountain Wind Power II LLC,2017,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,216909.0,8760,True,,0.3095
+56753,Mountain Wind Power II LLC,2018,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,5674.0,8760,True,,0.0081
+56753,Mountain Wind Power II LLC,2019,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,198886.0,8760,True,,0.2838
+56753,Mountain Wind Power II LLC,2020,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,156303.0,8784,True,,0.2224
+56753,Mountain Wind Power II LLC,2021,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,160538.0,8760,True,,0.2291
+56753,Mountain Wind Power II LLC,2022,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,144290.0,8760,True,,0.2059
+56753,Mountain Wind Power II LLC,2023,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,140786.0,8760,True,,0.2009
+56753,Mountain Wind Power II LLC,2024,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,170130.0,8784,True,,0.2421
+56753,Mountain Wind Power II LLC,2025,Uinta,41.263889,-110.544444,Mountain Wind Power II LLC,2008-09-01,1,80.0,187778.0,8760,True,,0.2679
+56752,Mountain Wind Power LLC,2008,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,64968.0,8784,False,generator entered service during year,
+56752,Mountain Wind Power LLC,2009,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,128331.0,8760,True,,0.2402
+56752,Mountain Wind Power LLC,2010,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,149424.0,8760,True,,0.2796
+56752,Mountain Wind Power LLC,2011,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,186502.0,8760,True,,0.349
+56752,Mountain Wind Power LLC,2012,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,171517.0,8784,True,,0.3201
+56752,Mountain Wind Power LLC,2013,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,166925.0,8760,True,,0.3124
+56752,Mountain Wind Power LLC,2014,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,191636.0,8760,True,,0.3586
+56752,Mountain Wind Power LLC,2015,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,140488.0,8760,True,,0.2629
+56752,Mountain Wind Power LLC,2016,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,161155.0,8784,True,,0.3008
+56752,Mountain Wind Power LLC,2017,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,164766.0,8760,True,,0.3083
+56752,Mountain Wind Power LLC,2018,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,4326.0,8760,True,,0.0081
+56752,Mountain Wind Power LLC,2019,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,158608.0,8760,True,,0.2968
+56752,Mountain Wind Power LLC,2020,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,110374.0,8784,True,,0.206
+56752,Mountain Wind Power LLC,2021,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,207903.0,8760,True,,0.3891
+56752,Mountain Wind Power LLC,2022,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,214466.0,8760,True,,0.4014
+56752,Mountain Wind Power LLC,2023,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,126559.0,8760,True,,0.2368
+56752,Mountain Wind Power LLC,2024,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,131623.0,8784,True,,0.2456
+56752,Mountain Wind Power LLC,2025,Uinta,41.288056,-110.480741,Mountain Wind Power LLC,2008-07-01,1,61.0,151420.0,8760,True,,0.2834
+60259,"Pioneer Wind Park, LLC",2016,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,74999.0,8784,False,generator entered service during year,
+60259,"Pioneer Wind Park, LLC",2017,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,269177.0,8760,True,,0.3841
+60259,"Pioneer Wind Park, LLC",2018,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,252682.0,8760,True,,0.3606
+60259,"Pioneer Wind Park, LLC",2019,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,282137.0,8760,True,,0.4026
+60259,"Pioneer Wind Park, LLC",2020,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,292235.0,8784,True,,0.4159
+60259,"Pioneer Wind Park, LLC",2021,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,242742.0,8760,True,,0.3464
+60259,"Pioneer Wind Park, LLC",2022,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,218442.0,8760,True,,0.3117
+60259,"Pioneer Wind Park, LLC",2023,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,226285.0,8760,True,,0.3229
+60259,"Pioneer Wind Park, LLC",2024,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,273017.0,8784,True,,0.3885
+60259,"Pioneer Wind Park, LLC",2025,Converse,42.728198,-105.866765,AES Distributed Energy,2016-10-01,1,80.0,252550.0,8760,True,,0.3604
+67769,Rock Creek Wind,2025,Carbon,41.58263,-106.077347,PacifiCorp,2025-09-01,2,590.0,212181.0,8760,False,generator entered service during year,
+55740,Rock River I LLC,2001,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,64730.0,8760,False,generator entered service during year,
+55740,Rock River I LLC,2002,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,141390.0,8760,True,,0.3228
+55740,Rock River I LLC,2003,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,154660.0,8760,True,,0.3531
+55740,Rock River I LLC,2004,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,144794.0,8784,True,,0.3297
+55740,Rock River I LLC,2005,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,141188.0,8760,True,,0.3223
+55740,Rock River I LLC,2006,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,142123.0,8760,True,,0.3245
+55740,Rock River I LLC,2007,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,140904.0,8760,True,,0.3217
+55740,Rock River I LLC,2008,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,156957.0,8784,True,,0.3574
+55740,Rock River I LLC,2009,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,134819.0,8760,True,,0.3078
+55740,Rock River I LLC,2010,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,138204.0,8760,True,,0.3155
+55740,Rock River I LLC,2011,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,136079.0,8760,True,,0.3107
+55740,Rock River I LLC,2012,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,135098.0,8784,True,,0.3076
+55740,Rock River I LLC,2013,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,142833.0,8760,True,,0.3261
+55740,Rock River I LLC,2014,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,151233.0,8760,True,,0.3453
+55740,Rock River I LLC,2015,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,117679.0,8760,True,,0.2687
+55740,Rock River I LLC,2016,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,145855.0,8784,True,,0.3321
+55740,Rock River I LLC,2017,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,147623.0,8760,True,,0.337
+55740,Rock River I LLC,2018,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,138698.0,8760,True,,0.3167
+55740,Rock River I LLC,2019,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,136244.0,8760,True,,0.3111
+55740,Rock River I LLC,2020,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,151174.0,8784,True,,0.3442
+55740,Rock River I LLC,2021,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,107328.0,8760,True,,0.245
+55740,Rock River I LLC,2022,Carbon,41.7172,-106.1077,Shell Wind Energy Inc.,2001-10-01,1,50.0,0.0,8760,False,generator retired during year,
+56842,Rolling Hills,2009,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,99.0,206185.0,8760,False,generator entered service during year,
+56842,Rolling Hills,2010,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,99.0,252669.0,8760,True,,0.2913
+56842,Rolling Hills,2011,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,103.3,309173.0,8760,False,capacity changed during year,
+56842,Rolling Hills,2012,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,103.3,292022.0,8784,True,,0.3218
+56842,Rolling Hills,2013,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,103.3,294774.0,8760,True,,0.3258
+56842,Rolling Hills,2014,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,103.3,271147.0,8760,True,,0.2996
+56842,Rolling Hills,2015,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,103.3,261284.0,8760,True,,0.2887
+56842,Rolling Hills,2016,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,99.0,284156.0,8784,False,capacity changed during year,
+56842,Rolling Hills,2017,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,99.0,237002.0,8760,True,,0.2733
+56842,Rolling Hills,2018,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,99.0,277843.0,8760,True,,0.3204
+56842,Rolling Hills,2019,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,267528.0,8760,False,capacity changed during year,
+56842,Rolling Hills,2020,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,363221.0,8784,True,,0.3571
+56842,Rolling Hills,2021,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,296559.0,8760,True,,0.2923
+56842,Rolling Hills,2022,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,286356.0,8760,True,,0.2823
+56842,Rolling Hills,2023,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,187786.0,8760,True,,0.1851
+56842,Rolling Hills,2024,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,244790.0,8784,True,,0.2407
+56842,Rolling Hills,2025,Converse,43.0572,-105.8543,PacifiCorp,2009-01-01,1,115.8,295088.0,8760,True,,0.2909
+67026,Roundhouse Renewable Energy II,2023,Laramie,41.054692,-104.995383,"Roundhouse Renewable Energy II, LLC",2023-12-01,1,105.7,6.0,8760,False,generator entered service during year,
+67026,Roundhouse Renewable Energy II,2024,Laramie,41.054692,-104.995383,"Roundhouse Renewable Energy II, LLC",2023-12-01,1,105.7,393578.0,8784,True,,0.4239
+67026,Roundhouse Renewable Energy II,2025,Laramie,41.054692,-104.995383,"Roundhouse Renewable Energy II, LLC",2023-12-01,1,105.7,376380.0,8760,True,,0.4065
+63133,Roundhouse Wind Energy Project,2020,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,513347.0,8784,False,generator entered service during year,
+63133,Roundhouse Wind Energy Project,2021,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,842304.0,8760,True,,0.4255
+63133,Roundhouse Wind Energy Project,2022,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,969526.0,8760,True,,0.4897
+63133,Roundhouse Wind Energy Project,2023,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,849586.0,8760,True,,0.4291
+63133,Roundhouse Wind Energy Project,2024,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,845895.0,8784,True,,0.4261
+63133,Roundhouse Wind Energy Project,2025,Laramie,41.095126,-105.107423,"Roundhouse Renewable Energy, LLC",2020-06-01,3,226.0,826429.0,8760,True,,0.4174
+56843,Seven Mile Hill,2008,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,19152.0,8784,False,generator entered service during year,
+56843,Seven Mile Hill,2009,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,369520.0,8760,True,,0.3413
+56843,Seven Mile Hill,2010,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,391845.0,8760,True,,0.3619
+56843,Seven Mile Hill,2011,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,465292.0,8760,True,,0.4297
+56843,Seven Mile Hill,2012,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,414750.0,8784,True,,0.382
+56843,Seven Mile Hill,2013,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,433146.0,8760,True,,0.4
+56843,Seven Mile Hill,2014,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,408639.0,8760,True,,0.3774
+56843,Seven Mile Hill,2015,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,123.6,360626.0,8760,True,,0.3331
+56843,Seven Mile Hill,2016,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,118.5,418688.0,8784,False,capacity changed during year,
+56843,Seven Mile Hill,2017,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,118.5,400657.0,8760,True,,0.386
+56843,Seven Mile Hill,2018,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,118.5,422023.0,8760,True,,0.4065
+56843,Seven Mile Hill,2019,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,385943.0,8760,False,capacity changed during year,
+56843,Seven Mile Hill,2020,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,518652.0,8784,True,,0.4039
+56843,Seven Mile Hill,2021,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,478659.0,8760,True,,0.3737
+56843,Seven Mile Hill,2022,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,499924.0,8760,True,,0.3903
+56843,Seven Mile Hill,2023,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,463160.0,8760,True,,0.3616
+56843,Seven Mile Hill,2024,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,399752.0,8784,True,,0.3113
+56843,Seven Mile Hill,2025,Carbon,41.9203,-106.3758,PacifiCorp,2008-12-01,2,146.2,458287.0,8760,True,,0.3578
+57091,Silver Sage Windpower,2009,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,33276.0,8760,False,generator entered service during year,
+57091,Silver Sage Windpower,2010,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,126804.0,8760,True,,0.3447
+57091,Silver Sage Windpower,2011,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,139648.0,8760,True,,0.3796
+57091,Silver Sage Windpower,2012,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,128867.0,8784,True,,0.3493
+57091,Silver Sage Windpower,2013,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,131541.0,8760,True,,0.3575
+57091,Silver Sage Windpower,2014,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,132239.0,8760,True,,0.3594
+57091,Silver Sage Windpower,2015,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,111639.0,8760,True,,0.3034
+57091,Silver Sage Windpower,2016,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,129793.0,8784,True,,0.3518
+57091,Silver Sage Windpower,2017,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,123764.0,8760,True,,0.3364
+57091,Silver Sage Windpower,2018,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,123734.0,8760,True,,0.3363
+57091,Silver Sage Windpower,2019,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,119976.0,8760,True,,0.3261
+57091,Silver Sage Windpower,2020,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,125813.0,8784,True,,0.341
+57091,Silver Sage Windpower,2021,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,102892.0,8760,True,,0.2797
+57091,Silver Sage Windpower,2022,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,123554.0,8760,True,,0.3358
+57091,Silver Sage Windpower,2023,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,109516.0,8760,True,,0.2977
+57091,Silver Sage Windpower,2024,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,108803.0,8784,True,,0.2949
+57091,Silver Sage Windpower,2025,Laramie,41.12968,-105.024,Duke Energy Renewables Services,2009-10-01,1,42.0,100242.0,8760,True,,0.2725
+62516,TB Flats,2021,Carbon,42.177245,-106.234141,PacifiCorp,2021-10-01,1,503.2,443268.0,8760,False,generator entered service during year,
+62516,TB Flats,2022,Carbon,42.177245,-106.234141,PacifiCorp,2021-10-01,1,503.2,1488986.0,8760,True,,0.3378
+62516,TB Flats,2023,Carbon,42.177245,-106.234141,PacifiCorp,2021-10-01,1,503.2,1316768.0,8760,True,,0.2987
+62516,TB Flats,2024,Carbon,42.177245,-106.234141,PacifiCorp,2021-10-01,1,503.2,1382056.0,8784,True,,0.3127
+62516,TB Flats,2025,Carbon,42.177245,-106.234141,PacifiCorp,2021-10-01,1,503.2,1361919.0,8760,True,,0.309
+57327,Top of the World Windpower Project,2010,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,149024.0,8760,False,generator entered service during year,
+57327,Top of the World Windpower Project,2011,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,679217.0,8760,True,,0.3877
+57327,Top of the World Windpower Project,2012,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,660722.0,8784,True,,0.3761
+57327,Top of the World Windpower Project,2013,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,641411.0,8760,True,,0.3661
+57327,Top of the World Windpower Project,2014,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,641297.0,8760,True,,0.366
+57327,Top of the World Windpower Project,2015,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,570027.0,8760,True,,0.3254
+57327,Top of the World Windpower Project,2016,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,627052.0,8784,True,,0.3569
+57327,Top of the World Windpower Project,2017,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,614930.0,8760,True,,0.351
+57327,Top of the World Windpower Project,2018,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,542231.0,8760,True,,0.3095
+57327,Top of the World Windpower Project,2019,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,548878.0,8760,True,,0.3133
+57327,Top of the World Windpower Project,2020,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,539770.0,8784,True,,0.3072
+57327,Top of the World Windpower Project,2021,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,401313.0,8760,True,,0.2291
+57327,Top of the World Windpower Project,2022,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,404226.0,8760,True,,0.2307
+57327,Top of the World Windpower Project,2023,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,254753.0,8760,True,,0.1454
+57327,Top of the World Windpower Project,2024,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,341574.0,8784,True,,0.1944
+57327,Top of the World Windpower Project,2025,Converse,42.9258,-105.7872,Duke Energy Renewables Services,2010-10-01,1,200.0,495841.0,8760,True,,0.283
+56093,TransAlta Wyoming Wind,2003,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,89.0,8760,False,generator entered service during year,
+56093,TransAlta Wyoming Wind,2004,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,324714.0,8784,True,,0.2567
+56093,TransAlta Wyoming Wind,2005,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,297224.0,8760,True,,0.2356
+56093,TransAlta Wyoming Wind,2006,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,332959.0,8760,True,,0.264
+56093,TransAlta Wyoming Wind,2007,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,348565.0,8760,True,,0.2763
+56093,TransAlta Wyoming Wind,2008,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,362899.0,8784,True,,0.2869
+56093,TransAlta Wyoming Wind,2009,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,352175.0,8760,True,,0.2792
+56093,TransAlta Wyoming Wind,2010,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,332972.0,8760,True,,0.264
+56093,TransAlta Wyoming Wind,2011,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,388558.0,8760,True,,0.308
+56093,TransAlta Wyoming Wind,2012,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,384066.0,8784,True,,0.3036
+56093,TransAlta Wyoming Wind,2013,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,348038.0,8760,True,,0.2759
+56093,TransAlta Wyoming Wind,2014,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,402876.0,8760,True,,0.3194
+56093,TransAlta Wyoming Wind,2015,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,306966.0,8760,True,,0.2433
+56093,TransAlta Wyoming Wind,2016,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,362139.0,8784,True,,0.2863
+56093,TransAlta Wyoming Wind,2017,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,364125.0,8760,True,,0.2887
+56093,TransAlta Wyoming Wind,2018,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,350158.0,8760,True,,0.2776
+56093,TransAlta Wyoming Wind,2019,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,343458.0,8760,True,,0.2723
+56093,TransAlta Wyoming Wind,2020,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,377140.0,8784,True,,0.2982
+56093,TransAlta Wyoming Wind,2021,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,355971.0,8760,True,,0.2822
+56093,TransAlta Wyoming Wind,2022,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,341330.0,8760,True,,0.2706
+56093,TransAlta Wyoming Wind,2023,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,264554.0,8760,True,,0.2097
+56093,TransAlta Wyoming Wind,2024,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,318843.0,8784,True,,0.2521
+56093,TransAlta Wyoming Wind,2025,Uinta,41.2874,-110.5556,TransAlta Wyoming Wind LLC,2003-12-01,1,144.0,321444.0,8760,True,,0.2548

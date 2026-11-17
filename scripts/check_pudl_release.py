@@ -16,7 +16,8 @@ import urllib.request
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RECORD = ROOT / "data" / "pudl_release.json"
 PUDL = "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/{}.parquet"
-TABLES = ["out_eia__yearly_generators", "out_eia923__yearly_generation_fuel_combined", "core_eia861__yearly_sales"]
+TABLES = ["out_eia__yearly_generators", "out_eia923__yearly_generation_fuel_combined", "core_eia861__yearly_sales",
+          "out_eia923__monthly_generation_fuel_combined"]
 
 
 def current():

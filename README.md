@@ -10,12 +10,14 @@ The project is independent and is not affiliated with any utility, energy compan
 
 | Path | What it holds |
 |---|---|
-| `index.html`, `data.html`, `monitor.html`, `transmission.html`, `teaching.html` | The website pages |
+| `index.html`, `data.html`, `wind.html`, `monitor.html`, `transmission.html`, `teaching.html` | The website pages |
 | `data/` | The Wyoming datasets, as CSV and JSON, with the checks recorded at each build |
 | `teaching/` | The Wyoming electricity lesson: notebook, worksheet and teacher notes |
 | `scripts/build_wyoming_data.py` | Builds the 2025 generator, generation and sales datasets from PUDL and cross-checks them against EIA-860 |
 | `scripts/build_retirement_history.py` | Builds the history of planned retirement dates for Wyoming's coal units, edition by edition, and checks it against EIA-860 |
 | `scripts/build_wyoming_queue.py` | Builds the Wyoming interconnection-queue dataset from Berkeley Lab's Queued Up file and checks it against Berkeley Lab's own state totals |
+| `scripts/build_wind_capacity_factors.py` | Builds the capacity factor of every Wyoming wind plant, by year from 2001 and by month, and checks the final year against EIA's EIA-923 workbook |
+| `scripts/plot_wind.py` | Draws the two charts on the wind page |
 | `scripts/build_transmission_map.py` | Builds the transmission map and its GeoJSON files from an OpenStreetMap extract of Wyoming's lines and substations |
 | `scripts/check_pudl_release.py` | Tells whether PUDL has published a new release since the last build |
 | `scripts/build_pages.py` | Builds the website pages from the datasets |
@@ -25,16 +27,19 @@ The project is independent and is not affiliated with any utility, energy compan
 ## Rebuilding
 
 ```
-pip install pandas pyarrow openpyxl
+pip install pandas pyarrow openpyxl matplotlib
 python scripts/build_wyoming_data.py --eia860 path/to/3_1_Generator_Y2025.xlsx
 python scripts/build_retirement_history.py --verify 2023=path/to/3_1_Generator_Y2023.xlsx 2024=path/to/3_1_Generator_Y2024.xlsx 2025=path/to/3_1_Generator_Y2025.xlsx
 python scripts/build_wyoming_queue.py --lbnl path/to/LBNL_Ix_Queue_Data_File_thru2025.xlsx
+python scripts/build_wind_capacity_factors.py --eia923 path/to/EIA923_Schedules_2_3_4_5_M_12_2025_Final.xlsx
+python scripts/plot_wind.py
 python scripts/check_pudl_release.py --write
 python scripts/build_pages.py
 ```
 
 The `--eia860` and `--verify` options repeat the cross-checks against the EIA-860 workbooks, which are part of
-EIA's annual data releases at https://www.eia.gov/electricity/data/eia860/. The Queued Up file is published once a
+EIA's annual data releases at https://www.eia.gov/electricity/data/eia860/. The `--eia923` option does the same for
+wind generation against the EIA-923 workbook, from https://www.eia.gov/electricity/data/eia923/. The Queued Up file is published once a
 year by Berkeley Lab at https://emp.lbl.gov/queues.
 
 ## Automatic updates
